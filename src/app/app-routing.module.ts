@@ -33,6 +33,10 @@ const routes: Routes = [
       {
         path: 'login',
         loadChildren: () => import('./components/users/users.module').then(m => m.UsersModule)
+      },
+      {
+        path: 'register',
+        component: RegisterComponent
       }
     ]
   }]
