@@ -13,6 +13,7 @@ export class NewfeedComponent implements OnInit {
               private router: Router) { }
 
   ngOnInit(): void {
+    // location.reload();
     this.userLogin = JSON.parse(<string>localStorage.getItem('user'))
   }
 
@@ -20,7 +21,7 @@ export class NewfeedComponent implements OnInit {
     this.authService.logout().subscribe(res=>{
       if(res.message){
         localStorage.clear()
-        this.router.navigate(["login"])
+        this.router.navigate([""])
       }
     })
   }
