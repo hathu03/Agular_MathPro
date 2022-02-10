@@ -18,6 +18,16 @@ export class UserService {
     return this.http.post(this.api_url+'/create',data)
   }
 
+  deleteUser(id:number):Observable<any>{
+    return this.http.delete(this.api_url+'/delete/'+id)
+  }
 
+  getUser(id:number):Observable<any>{
+    return this.http.get(this.api_url+'/detail/'+id)
+  }
+
+  update(data: any, id: number | undefined):Observable<any>{
+    return this.http.post(this.api_url+'/update/'+id,data)
+  }
 
 }
