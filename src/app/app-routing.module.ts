@@ -31,6 +31,10 @@ const routes: Routes = [
         component: NewfeedComponent
       },
       {
+        path: 'master',
+        component: MasterComponent
+      },
+      {
         path: 'login',
         loadChildren: () => import('./components/users/users.module').then(m => m.UsersModule)
       }
