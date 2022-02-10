@@ -1,5 +1,7 @@
+
 import { NgModule } from '@angular/core';
 import {RouterModule, Routes} from "@angular/router";
+
 import {MasterComponent} from "./master/master.component";
 import {LoginComponent} from "./login/login.component";
 import {RegisterComponent} from "./register/register.component";
@@ -10,29 +12,35 @@ const routes: Routes = [
     path: '',
     children: [
       {
-        path:'',
-        component:NewfeedComponent
+        path: '',
+        component: LoginComponent
       },
       {
         path: 'users',
         component: MasterComponent,
-        loadChildren: ()=>import('./components/users/users.module').then(m=>m.UsersModule)
+        loadChildren: () => import('./components/users/users.module').then(m => m.UsersModule)
       },
       {
+
         path: 'posts',
         component: MasterComponent,
-        loadChildren: ()=>import('./components/posts/posts.module').then(m=>m.PostsModule)
+        loadChildren: () => import('./components/posts/posts.module').then(m => m.PostsModule)
       },
       {
-        path:'login',
-        component: LoginComponent
+        path: 'newfeed',
+        component: NewfeedComponent
+      },
+      {
+        path: 'login',
+        loadChildren: () => import('./components/users/users.module').then(m => m.UsersModule)
       }
     ]
-  }
-];
+  }]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}
+

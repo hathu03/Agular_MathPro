@@ -20,7 +20,7 @@ export class NewfeedComponent implements OnInit {
     this.authService.logout().subscribe(res=>{
       if(res.message){
         localStorage.clear()
-        this.router.navigate(["login"])
+        this.router.navigate([""])
       }
     })
   }
