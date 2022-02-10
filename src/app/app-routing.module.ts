@@ -6,6 +6,7 @@ import {MasterComponent} from "./master/master.component";
 import {LoginComponent} from "./login/login.component";
 import {RegisterComponent} from "./register/register.component";
 import {NewfeedComponent} from "./newfeed/newfeed.component";
+import {NotFoundComponent} from "./not-found/not-found.component";
 
 const routes: Routes = [
   {
@@ -31,11 +32,28 @@ const routes: Routes = [
         component: NewfeedComponent
       },
       {
+        path: 'master',
+        component: MasterComponent
+      },
+      {
+        path: 'register',
+        component: RegisterComponent
+      },
+      {
         path: 'login',
         loadChildren: () => import('./components/users/users.module').then(m => m.UsersModule)
+      },
+      {
+        path: '404',
+        component: NotFoundComponent
       }
     ]
-  }]
+  },
+  {
+    path: '**',
+    redirectTo: '404'
+  }
+  ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

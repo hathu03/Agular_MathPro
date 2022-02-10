@@ -9,6 +9,7 @@ import {LoginComponent} from './login/login.component';
 import {HttpClientModule} from "@angular/common/http";
 import {ReactiveFormsModule} from "@angular/forms";
 import {NewfeedComponent} from './newfeed/newfeed.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import {NewfeedComponent} from './newfeed/newfeed.component';
     MasterComponent,
     LoginComponent,
     NewfeedComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
