@@ -19,6 +19,11 @@ const routes: Routes = [
         loadChildren: ()=>import('./components/users/users.module').then(m=>m.UsersModule)
       },
       {
+        path: 'posts',
+        component: MasterComponent,
+        loadChildren: ()=>import('./components/posts/posts.module').then(m=>m.PostsModule)
+      },
+      {
         path:'login',
         component: LoginComponent
       }

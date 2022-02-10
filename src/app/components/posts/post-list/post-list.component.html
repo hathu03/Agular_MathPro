@@ -1,1 +1,25 @@
-<p>post-list works!</p>
+<div class="container">
+  <div class="row">
+    <button class="btn btn-success mb-3" routerLink="../posts/create">Create</button>
+    <table class="table">
+      <tr>
+        <td>ID</td>
+        <td>User ID</td>
+        <td>Content</td>
+        <td>Image</td>
+        <td>Status ID</td>
+        <td col="3">Action</td>
+      </tr>
+      <tr *ngFor="let post of posts; let i = index">
+        <td>{{ i+1 }}</td>
+        <td>{{post.user_id}}</td>
+        <td>{{post.content}}</td>
+        <td>{{post.image}}</td>
+        <td>{{post.status_id}}</td>
+        <td><button class="btn btn-warning" routerLink="../posts/{{post.id}}/update">Update</button></td>
+        <td><button class="btn btn-info" routerLink="../posts/{{post.id}}/detail">Detail</button></td>
+        <td><button class="btn btn-danger" (click)="deletePost(i)">Delete</button></td>
+      </tr>
+    </table>
+  </div>
+</div>
