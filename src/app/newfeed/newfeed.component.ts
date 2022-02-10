@@ -13,6 +13,7 @@ export class NewfeedComponent implements OnInit {
               private router: Router) { }
 
   ngOnInit(): void {
+    // location.reload();
     this.userLogin = JSON.parse(<string>localStorage.getItem('user'))
   }
 

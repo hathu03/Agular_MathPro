@@ -34,6 +34,7 @@ export class LoginComponent implements OnInit {
         localStorage.setItem("token",token)
         localStorage.setItem("user",JSON.stringify(res.user))
         this.router.navigate(['newfeed'])
+
       }
     })
   }

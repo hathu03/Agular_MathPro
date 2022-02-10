@@ -9,33 +9,12 @@
 <!--  <button type="submit">Login</button>-->
 <!--</form>-->
 
-<!DOCTYPE html>
-<html lang="en">
 
 
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
-  <title>Pitnik Social Network Toolkit</title>
-  <link rel="icon" href="images/fav.png" type="image/png" sizes="16x16">
-
-
-  <link rel="stylesheet" href="../../assets/pitnik-MXH/css/weather-icon.css">
-  <link rel="stylesheet" href="../../assets/pitnik-MXH/css/weather-icons.min.css">
-  <link rel="stylesheet" href="../../assets/pitnik-MXH/css/style.css">
-  <link rel="stylesheet" href="../../assets/pitnik-MXH/css/color.css">
-  <link rel="stylesheet" href="../../assets/pitnik-MXH/css/responsive.css">
-  <link rel="stylesheet" href="../../assets/pitnik-MXH/css/main.min.css">
-
-
-</head>
-<body>
 <div class="www-layout">
   <section>
     <div class="gap no-gap signin whitish medium-opacity">
-      <div class="bg-image" style="background-image:url(images/resources/theme-bg.jpg)"></div>
+      <div class="bg-image" style="background-image:url('../../assets/pitnik-MXH/images/resources/theme-bg.jpg')"></div>
       <div class="container">
         <div class="row">
           <div class="col-lg-8">
@@ -88,11 +67,13 @@
             <div class="we-login-register">
               <div class="form-title">
                 <i class="fa fa-key"></i>login
-                <span>sign in now and meet the awesome Friends around the world.</span>
+                <div *ngIf="errLogin" class="alert alert-danger">
+                  {{errLogin}}
+                </div>
               </div>
-              <form class="we-form" method="post">
-                <input type="text" placeholder="Email">
-                <input type="password" placeholder="Password">
+              <form class="we-form" *ngIf="formLogin" [formGroup]="formLogin" (ngSubmit)="submit()">
+                <input type="email" formControlName="email" placeholder="Email">
+                <input type="password" formControlName="password" placeholder="Password">
                 <input type="checkbox"><label>remember me</label>
                 <button type="submit" data-ripple="">sign in</button>
                 <a class="forgot underline" href="#" title="">forgot password?</a>
@@ -111,8 +92,5 @@
   </section>
 
 </div>
-<script src="../../assets/pitnik-MXH/js/main.min.js"></script>
-<script src="../../assets/pitnik-MXH/js/script.js"></script>
 
-</body>
-</html>
+
