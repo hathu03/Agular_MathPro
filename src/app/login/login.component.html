@@ -1,0 +1,10 @@
+<div class="container">
+  <div *ngIf="errLogin" class="alert alert-danger">
+    {{errLogin}}
+  </div>
+</div>
+<form *ngIf="formLogin" [formGroup]="formLogin" (ngSubmit)="submit()">
+  <input type="email" formControlName="email" placeholder="Email">
+  <input type="password" formControlName="password" placeholder="Password">
+  <button type="submit">Login</button>
+</form>
