@@ -1,4 +1,6 @@
+
 import {NgModule} from '@angular/core';
+import { NgModule } from '@angular/core';
 import {RouterModule, Routes} from "@angular/router";
 
 import {MasterComponent} from "./master/master.component";
@@ -11,8 +13,8 @@ const routes: Routes = [
     path: '',
     children: [
       {
-        path: '',
-        component: NewfeedComponent
+        path:'',
+        component:NewfeedComponent
       },
       {
         path: 'users',
@@ -21,8 +23,9 @@ const routes: Routes = [
       },
       {
         path: 'login',
-        component: LoginComponent
-      }
+        loadChildren: ()=>import('./components/users/users.module').then(m=>m.UsersModule)
+      },
+      
     ]
   }
 ];
@@ -33,3 +36,4 @@ const routes: Routes = [
 })
 export class AppRoutingModule {
 }
+
