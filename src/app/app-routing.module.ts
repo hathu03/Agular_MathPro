@@ -7,6 +7,7 @@ import {LoginComponent} from "./login/login.component";
 import {RegisterComponent} from "./register/register.component";
 import {NewfeedComponent} from "./newfeed/newfeed.component";
 import {NotFoundComponent} from "./not-found/not-found.component";
+import {AuthGuard} from "./auth.guard";
 
 const routes: Routes = [
   {
@@ -19,17 +20,20 @@ const routes: Routes = [
       {
         path: 'users',
         component: MasterComponent,
-        loadChildren: () => import('./components/users/users.module').then(m => m.UsersModule)
+        loadChildren: () => import('./components/users/users.module').then(m => m.UsersModule),
+        canActivate: [AuthGuard]
       },
       {
 
         path: 'posts',
         component: MasterComponent,
-        loadChildren: () => import('./components/posts/posts.module').then(m => m.PostsModule)
+        loadChildren: () => import('./components/posts/posts.module').then(m => m.PostsModule),
+        canActivate: [AuthGuard]
       },
       {
         path: 'newfeed',
-        component: NewfeedComponent
+        component: NewfeedComponent,
+        canActivate: [AuthGuard]
       },
       {
         path: 'master',
