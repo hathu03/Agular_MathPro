@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit {
         let token = res.access_token
         localStorage.setItem("token",token)
         localStorage.setItem("user",JSON.stringify(res.user))
-        this.router.navigate([''])
+        this.router.navigate(['newfeed'])
       }
     })
   }

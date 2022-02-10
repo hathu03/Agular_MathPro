@@ -1,5 +1,4 @@
 
-import {NgModule} from '@angular/core';
 import { NgModule } from '@angular/core';
 import {RouterModule, Routes} from "@angular/router";
 
@@ -13,8 +12,8 @@ const routes: Routes = [
     path: '',
     children: [
       {
-        path:'',
-        component:NewfeedComponent
+        path: '',
+        component: LoginComponent
       },
       {
         path: 'users',
@@ -22,13 +21,21 @@ const routes: Routes = [
         loadChildren: () => import('./components/users/users.module').then(m => m.UsersModule)
       },
       {
-        path: 'login',
-        loadChildren: ()=>import('./components/users/users.module').then(m=>m.UsersModule)
+
+        path: 'posts',
+        component: MasterComponent,
+        loadChildren: () => import('./components/posts/posts.module').then(m => m.PostsModule)
       },
-      
+      {
+        path: 'newfeed',
+        component: NewfeedComponent
+      },
+      {
+        path: 'login',
+        loadChildren: () => import('./components/users/users.module').then(m => m.UsersModule)
+      }
     ]
-  }
-];
+  }]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
