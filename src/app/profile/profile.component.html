@@ -1,17 +1,4 @@
 
-<!--<div class="wavy-wraper">-->
-<!--  <div class="wavy">-->
-<!--    <span style="&#45;&#45;i:1;">p</span>-->
-<!--    <span style="&#45;&#45;i:2;">i</span>-->
-<!--    <span style="&#45;&#45;i:3;">t</span>-->
-<!--    <span style="&#45;&#45;i:4;">n</span>-->
-<!--    <span style="&#45;&#45;i:5;">i</span>-->
-<!--    <span style="&#45;&#45;i:6;">k</span>-->
-<!--    <span style="&#45;&#45;i:7;">.</span>-->
-<!--    <span style="&#45;&#45;i:8;">.</span>-->
-<!--    <span style="&#45;&#45;i:9;">.</span>-->
-<!--  </div>-->
-<!--</div>-->
 <div class="theme-layout">
 
   <div class="responsive-header">
@@ -742,7 +729,7 @@
         </li>
       </ul>
       <div class="user-img">
-        <h5>Jack Carter</h5>
+        <h5>{{userLogin.fullname}}</h5>
         <img src="images/resources/admin.jpg" alt="">
         <span class="status f-online"></span>
         <div class="user-setting">
@@ -758,7 +745,7 @@
             <li><a href="setting.html" title=""><i class="ti-pencil-alt"></i>edit profile</a></li>
             <li><a href="#" title=""><i class="ti-target"></i>activity log</a></li>
             <li><a href="setting.html" title=""><i class="ti-settings"></i>account setting</a></li>
-            <li><a href="logout.html" title=""><i class="ti-power-off"></i>log out</a></li>
+            <li><a (click)="logout()" title=""><i class="ti-power-off"></i>log out</a></li>
           </ul>
         </div>
       </div>
@@ -1276,7 +1263,7 @@
                         </div>
 
                         <div class="author-content">
-                          <a class="h4 author-name" href="about.html">Jack Carter</a>
+                          <a class="h4 author-name" href="about.html">{{userLogin.fullname}}</a>
                           <div class="country">Ontario, CA</div>
                         </div>
                       </div>

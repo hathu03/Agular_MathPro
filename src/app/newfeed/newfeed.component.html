@@ -1,9 +1,6 @@
 
-<!--<h2>Trang Chu</h2>-->
-<!--Xin chao: {{userLogin.fullname}}<br>-->
+
 <!--<button (click)="logout()">Logout</button>-->
-
-
 
 <div class="theme-layout">
 
@@ -737,7 +734,7 @@
         </li>
       </ul>
       <div class="user-img">
-        <h5>Jack Carter</h5>
+        <h5>{{userLogin.fullname}}</h5>
         <img src="images/resources/admin.jpg" alt="">
         <span class="status f-online"></span>
         <div class="user-setting">
@@ -749,7 +746,7 @@
           </ul>
           <span class="seting-title">User setting <a href="#" title="">see all</a></span>
           <ul class="log-out">
-            <li><a href="about.html" title=""><i class="ti-user"></i> view profile</a></li>
+            <li><a routerLink="../profile" title=""><i class="ti-user"></i> view profile</a></li>
             <li><a href="setting.html" title=""><i class="ti-pencil-alt"></i>edit profile</a></li>
             <li><a href="#" title=""><i class="ti-target"></i>activity log</a></li>
             <li><a href="setting.html" title=""><i class="ti-settings"></i>account setting</a></li>
@@ -1501,7 +1498,7 @@
                               </ul>
                             </div>
                           </div>
-                          <ins><a href="time-line.html" title="">Jack Carter</a> Post Album</ins>
+                          <ins><a href="time-line.html" title="">{{userLogin.fullname}}</a> Post Album</ins>
                           <span><i class="fa fa-globe"></i> published: September,15 2020 19:PM </span>
                         </div>
                         <div class="post-meta">
