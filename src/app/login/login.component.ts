@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder, FormGroup} from "@angular/forms";
+import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
 import {AuthService} from "../services/auth.service";
 import {Router} from "@angular/router";
 
@@ -19,8 +19,8 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
     this.formLogin = this.fb.group({
-      email: [""],
-      password: [""]
+      email: new FormControl('', [Validators.required, Validators.email]),
+      password: new FormControl('', [Validators.required])
     })
   }
 
@@ -37,6 +37,12 @@ export class LoginComponent implements OnInit {
 
       }
     })
+  }
+  get email() {
+    return this.formLogin?.get('email')
+  }
+  get password() {
+    return this.formLogin?.get('password')
   }
 
 }
