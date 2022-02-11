@@ -8,6 +8,7 @@ import {UserService} from "../../../services/user.service";
 })
 export class UserListComponent implements OnInit {
   users: any[] = [];
+  private res: any;
 
   constructor(private userService: UserService) {
   }
@@ -22,9 +23,13 @@ export class UserListComponent implements OnInit {
     })
   }
 
-  delete(index: number) {
+  delete(id: number) {
     if (confirm('Are You Sure???')) {
-      this.users.splice(index, 1)
+      this.userService.deleteUser(id).subscribe(res=>{
+        if (res.success == true) {
+          this.getUsers();
+        }
+      })
     }
   }
 }

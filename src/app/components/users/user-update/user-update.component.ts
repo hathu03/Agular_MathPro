@@ -11,8 +11,8 @@ import {ActivatedRoute, Router} from "@angular/router";
 export class UserUpdateComponent implements OnInit {
 
 
-  formUpdateUser?: FormGroup;
-  id?: number;
+  formUpdateUser: FormGroup | any
+  id: any
 
   constructor(private fb: FormBuilder,
               private userService: UserService,
@@ -49,10 +49,10 @@ export class UserUpdateComponent implements OnInit {
       }
     })
   }
-  submit(){
-    let data = this.formUpdateUser?.value;
-    this.userService.update(data,this.id).subscribe(res=>{
-      this.route.navigate(['/users'])
+  update(id: any){
+    let user = this.formUpdateUser.value;
+    this.userService.update(id, user).subscribe(()=>{
+      this.route.navigate(['users'])
     })
   }
 
