@@ -8,6 +8,7 @@ import {RegisterComponent} from "./register/register.component";
 import {NewfeedComponent} from "./newfeed/newfeed.component";
 import {NotFoundComponent} from "./not-found/not-found.component";
 import {AuthGuard} from "./auth.guard";
+import {ProfileComponent} from "./profile/profile.component";
 
 const routes: Routes = [
   {
@@ -38,6 +39,10 @@ const routes: Routes = [
       {
         path: 'master',
         component: MasterComponent
+      },
+      {
+        path: 'profile',
+        component: ProfileComponent
       },
       {
         path: 'register',

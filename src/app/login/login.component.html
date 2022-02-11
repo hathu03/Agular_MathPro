@@ -68,20 +68,19 @@
               <div class="form-title">
                 <i class="fa fa-key"></i>login
                 <div *ngIf="errLogin" class="alert alert-danger">
-                  {{errLogin}}
+                  {{ errLogin }}
                 </div>
               </div>
               <form class="we-form" *ngIf="formLogin" [formGroup]="formLogin" (ngSubmit)="submit()">
                 <input type="email" formControlName="email" placeholder="Email">
                 <input type="password" formControlName="password" placeholder="Password">
-                <input type="checkbox"><label>remember me</label>
                 <button type="submit" data-ripple="">sign in</button>
                 <a class="forgot underline" href="#" title="">forgot password?</a>
               </form>
+              <a class="with-smedia google" href="#" title="" data-ripple=""><i class="fa fa-google-plus"></i></a>
               <a class="with-smedia facebook" href="#" title="" data-ripple=""><i class="fa fa-facebook"></i></a>
               <a class="with-smedia twitter" href="#" title="" data-ripple=""><i class="fa fa-twitter"></i></a>
               <a class="with-smedia instagram" href="#" title="" data-ripple=""><i class="fa fa-instagram"></i></a>
-              <a class="with-smedia google" href="#" title="" data-ripple=""><i class="fa fa-google-plus"></i></a>
               <span>don't have an account? <a class="we-account underline" routerLink="register" title="">register now</a></span>
             </div>
           </div>
@@ -90,6 +89,7 @@
       </div>
     </div>
   </section>
+
 </div>
 
 
