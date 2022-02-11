@@ -83,19 +83,19 @@
                 <input type="text" formControlName="email" placeholder="Email">
                 <div *ngIf="email?.invalid && email?.touched">
                   <p style="color: white" *ngIf="email?.errors?.['required']">
-                    Khong duoc de trong Email
+                    Không được để trống Email!
                   </p>
                 </div>
                 <input type="password" formControlName="password" placeholder="Password">
                 <div *ngIf="password?.invalid && password?.touched">
                   <p style="color: white" *ngIf="password?.errors?.['required']">
-                    Khong duoc de trong Password
+                    Không được để trống Password!
                   </p>
                 </div>
                 <input type="text" formControlName="phone" placeholder="+1234-567-987">
                 <div *ngIf="phone?.invalid && phone?.touched">
                   <p style="color: white" *ngIf="phone?.errors?.['required']">
-                    Khong duoc de trong Phone
+                    Không được để trống Phone!
                   </p>
                 </div>
                 <input type="checkbox"><label>Send code to Mobile</label>

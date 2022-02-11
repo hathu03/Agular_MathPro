@@ -75,13 +75,13 @@
                 <input type="email" formControlName="email" placeholder="Email">
                 <div *ngIf="email?.invalid && email?.touched">
                   <p style="color: white" *ngIf="email?.errors?.['required']">
-                    Khong duoc de trong Email
+                    Không được để trống Email!
                   </p>
                 </div>
                 <input type="password" formControlName="password" placeholder="Password">
                 <div *ngIf="password?.invalid && password?.touched">
                   <p style="color: white" *ngIf="password?.errors?.['required']">
-                    Khong duoc de trong Password
+                    Không được để trống Password!
                   </p>
                 </div>
                 <button type="submit" data-ripple="" [disabled]="formLogin.invalid">sign in</button>
