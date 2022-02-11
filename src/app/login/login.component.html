@@ -73,8 +73,18 @@
               </div>
               <form class="we-form" *ngIf="formLogin" [formGroup]="formLogin" (ngSubmit)="submit()">
                 <input type="email" formControlName="email" placeholder="Email">
+                <div *ngIf="email?.invalid && email?.touched">
+                  <p style="color: white" *ngIf="email?.errors?.['required']">
+                    Khong duoc de trong Email
+                  </p>
+                </div>
                 <input type="password" formControlName="password" placeholder="Password">
-                <button type="submit" data-ripple="">sign in</button>
+                <div *ngIf="password?.invalid && password?.touched">
+                  <p style="color: white" *ngIf="password?.errors?.['required']">
+                    Khong duoc de trong Password
+                  </p>
+                </div>
+                <button type="submit" data-ripple="" [disabled]="formLogin.invalid">sign in</button>
                 <a class="forgot underline" href="#" title="">forgot password?</a>
               </form>
               <a class="with-smedia google" href="#" title="" data-ripple=""><i class="fa fa-google-plus"></i></a>

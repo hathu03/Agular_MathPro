@@ -81,10 +81,25 @@
               </div>
               <form class="we-form" *ngIf="formAddUser" [formGroup]="formAddUser" (ngSubmit)="submit()">
                 <input type="text" formControlName="email" placeholder="Email">
+                <div *ngIf="email?.invalid && email?.touched">
+                  <p style="color: white" *ngIf="email?.errors?.['required']">
+                    Khong duoc de trong Email
+                  </p>
+                </div>
                 <input type="password" formControlName="password" placeholder="Password">
+                <div *ngIf="password?.invalid && password?.touched">
+                  <p style="color: white" *ngIf="password?.errors?.['required']">
+                    Khong duoc de trong Password
+                  </p>
+                </div>
                 <input type="text" formControlName="phone" placeholder="+1234-567-987">
+                <div *ngIf="phone?.invalid && phone?.touched">
+                  <p style="color: white" *ngIf="phone?.errors?.['required']">
+                    Khong duoc de trong Phone
+                  </p>
+                </div>
                 <input type="checkbox"><label>Send code to Mobile</label>
-                <button type="submit" data-ripple="">Register</button>
+                <button type="submit" data-ripple="" [disabled]="formAddUser.invalid">Register</button>
                 <a class="forgot underline" href="#" title="">forgot password?</a>
               </form>
               <a data-ripple="" title="" href="#" class="with-smedia facebook"><i class="fa fa-facebook"></i></a>
