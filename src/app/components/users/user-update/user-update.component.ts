@@ -52,7 +52,7 @@ export class UserUpdateComponent implements OnInit {
   update(id: any){
     let user = this.formUpdateUser.value;
     this.userService.update(id, user).subscribe(()=>{
-      this.route.navigate([''])
+      this.route.navigate(['users'])
     })
   }
 
