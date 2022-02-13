@@ -1,16 +1,21 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {Observable} from "rxjs";
+import {environment} from "../../environments/environment";
+import {AuthService} from "./auth.service";
 
 @Injectable({
   providedIn: 'root'
 })
 export class PostService {
-  api_url = 'http://127.0.0.1:8000/api/posts'
 
-  constructor(private http: HttpClient) { }
+
+  constructor(private http: HttpClient, private authService: AuthService) { }
 
   getAll():Observable<any>{
-    return this.http.get(this.api_url);
+    return this.http.get(environment.api + "/posts", {headers: this.authService.setHeader()});
+  }
+  create(data: any): Observable<any>{
+    return this.http.post(environment.api + "/posts", data, {headers: this.authService.setHeader()})
   }
 }

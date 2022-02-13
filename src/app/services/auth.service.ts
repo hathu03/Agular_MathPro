@@ -11,12 +11,15 @@ export class AuthService {
   constructor(private http: HttpClient) { }
 
   login(data:any): Observable<any>{
-    return this.http.post(environment.api + "auth/login",data);
+    return this.http.post(environment.api + "/auth/login",data);
+  }
+
+  setHeader() {
+    let token = localStorage.getItem("token");
+    return new HttpHeaders().set('Authorization', "Bearer " + token)
   }
 
   logout(): Observable<any>{
-    let token = localStorage.getItem('token')
-    let headers_object = new HttpHeaders().set("Authorization", "Bearer " + token);
-    return this.http.post(environment.api + "auth/logout",null,{headers: headers_object});
+    return this.http.post(environment.api + "auth/logout",null,{headers: this.setHeader()});
   }
 }
