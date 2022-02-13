@@ -19,7 +19,8 @@ export class PostListComponent implements OnInit {
 
   getPosts() {
     this.postServive.getAll().subscribe(res => {
-      this.posts = res.data
+      this.posts = res
+
     })
   }
 

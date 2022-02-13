@@ -12,7 +12,7 @@
       </tr>
       <tr *ngFor="let post of posts; let i = index">
         <td>{{ i+1 }}</td>
-        <td>{{post.user_id}}</td>
+        <td>{{post.user.fullname}}</td>
         <td>{{post.content}}</td>
         <td>{{post.image}}</td>
         <td>{{post.status_id}}</td>

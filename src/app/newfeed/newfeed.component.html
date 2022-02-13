@@ -1,6 +1,7 @@
-
-
+<!--<h2>Trang Chu</h2>-->
+<!--Xin chao: {{userLogin.fullname}}<br>-->
 <!--<button (click)="logout()">Logout</button>-->
+
 
 <div class="theme-layout">
 
@@ -20,7 +21,7 @@
     </div>
     <div class="mh-head second">
       <form class="mh-form">
-        <input placeholder="search" />
+        <input placeholder="search"/>
         <a href="#/" class="fa fa-search"></a>
       </form>
     </div>
@@ -182,32 +183,32 @@
           <form method="post">
             <div class="setting-row">
               <span>Sub users</span>
-              <input type="checkbox" id="switch6" />
+              <input type="checkbox" id="switch6"/>
               <label for="switch6" data-off-label="OFF"></label>
             </div>
             <div class="setting-row">
               <span>personal account</span>
-              <input type="checkbox" id="switch7" />
+              <input type="checkbox" id="switch7"/>
               <label for="switch7" data-off-label="OFF"></label>
             </div>
             <div class="setting-row">
               <span>Business account</span>
-              <input type="checkbox" id="switch8" />
+              <input type="checkbox" id="switch8"/>
               <label for="switch8" data-off-label="OFF"></label>
             </div>
             <div class="setting-row">
               <span>Show me online</span>
-              <input type="checkbox" id="switch9" />
+              <input type="checkbox" id="switch9"/>
               <label for="switch9" data-off-label="OFF"></label>
             </div>
             <div class="setting-row">
               <span>Delete history</span>
-              <input type="checkbox" id="switch10" />
+              <input type="checkbox" id="switch10"/>
               <label for="switch10" data-off-label="OFF"></label>
             </div>
             <div class="setting-row">
               <span>Expose author name</span>
-              <input type="checkbox" id="switch11" />
+              <input type="checkbox" id="switch11"/>
               <label for="switch11" data-off-label="OFF"></label>
             </div>
           </form>
@@ -734,7 +735,7 @@
         </li>
       </ul>
       <div class="user-img">
-        <h5>{{userLogin.fullname}}</h5>
+        <h5>Jack Carter</h5>
         <img src="images/resources/admin.jpg" alt="">
         <span class="status f-online"></span>
         <div class="user-setting">
@@ -746,7 +747,7 @@
           </ul>
           <span class="seting-title">User setting <a href="#" title="">see all</a></span>
           <ul class="log-out">
-            <li><a routerLink="../profile" title=""><i class="ti-user"></i> view profile</a></li>
+            <li><a href="about.html" title=""><i class="ti-user"></i> view profile</a></li>
             <li><a href="setting.html" title=""><i class="ti-pencil-alt"></i>edit profile</a></li>
             <li><a href="#" title=""><i class="ti-target"></i>activity log</a></li>
             <li><a href="setting.html" title=""><i class="ti-settings"></i>account setting</a></li>
@@ -845,7 +846,7 @@
             <li><a href="manage-page.html" title="">Manage Page</a></li>
             <li><a href="weather-forecast.html" title="">weather-forecast</a></li>
             <li><a href="statistics.html" title="">Statics/Analytics</a></li>
-<!--            <li><a href="shop-cart.html" title="">Shop Cart</a></li>-->
+            <li><a href="shop-cart.html" title="">Shop Cart</a></li>
           </ul>
         </li>
         <li><a class="" href="#" title=""><i class="fa fa-gears"></i> Account Setting</a>
@@ -1174,7 +1175,7 @@
             <li><a href="manage-page.html" title="">Manage Page</a></li>
             <li><a href="weather-forecast.html" title="">weather-forecast</a></li>
             <li><a href="statistics.html" title="">Statics/Analytics</a></li>
-<!--            <li><a href="shop-cart.html" title="">Shop Cart</a></li>-->
+            <li><a href="shop-cart.html" title="">Shop Cart</a></li>
           </ul>
         </li>
         <li class="menu-item-has-children"><a class="" href="#" title=""><i class="fa fa-gears"></i>Account Setting</a>
@@ -1211,1448 +1212,633 @@
     </div>
   </div><!-- left sidebar menu -->
 
-  <section>
-    <div class="gap2 gray-bg">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="row merged20" id="page-contents">
-              <div class="col-lg-3">
-                <aside class="sidebar static left">
-                  <div class="widget">
-                    <div class="weather-widget low-opacity bluesh">
-                      <div class="bg-image" id="avt"></div>
-                      <span class="refresh-content"><i class="fa fa-refresh"></i></span>
-                      <div class="weather-week">
-                        <div class="icon sun-shower">
-                          <div class="cloud"></div>
-                          <div class="sun">
-                            <div class="rays"></div>
-                          </div>
-                          <div class="rain"></div>
+  <div class="gap2 gray-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row merged20" id="page-contents">
+            <div class="col-lg-3">
+              <aside class="sidebar static left">
+                <div class="widget">
+                  <div class="weather-widget low-opacity bluesh">
+                    <div class="bg-image" id="avt"></div>
+                    <span class="refresh-content"><i class="fa fa-refresh"></i></span>
+                    <div class="weather-week">
+                      <div class="icon sun-shower">
+                        <div class="cloud"></div>
+                        <div class="sun">
+                          <div class="rays"></div>
                         </div>
+                        <div class="rain"></div>
                       </div>
-                      <div class="weather-infos">
-                        <span class="weather-tem">25</span>
-                        <h3>Cloudy Skyes<i>Sicklervilte, New Jersey</i></h3>
-                        <div class="weather-date skyblue-bg">
-                          <span>MAY<strong>21</strong></span>
-                        </div>
+                    </div>
+                    <div class="weather-infos">
+                      <span class="weather-tem">25</span>
+                      <h3>Cloudy Skyes<i>Sicklervilte, New Jersey</i></h3>
+                      <div class="weather-date skyblue-bg">
+                        <span>MAY<strong>21</strong></span>
                       </div>
-                      <div class="monthly-weather">
-                        <ul>
-                          <li>
-                            <span>Sun</span>
-                            <a href="#" title=""><i class="wi wi-day-sunny"></i></a>
-                            <em>40°</em>
-                          </li>
-                          <li>
-                            <span>Mon</span>
-                            <a href="#" title=""><i class="wi wi-day-cloudy"></i></a>
-                            <em>10°</em>
-                          </li>
-                          <li>
-                            <span>Tue</span>
-                            <a href="#" title=""><i class="wi wi-day-hail"></i></a>
-                            <em>20°</em>
-                          </li>
-                          <li>
-                            <span>Wed</span>
-                            <a href="#" title=""><i class="wi wi-day-lightning"></i></a>
-                            <em>34°</em>
-                          </li>
-                          <li>
-                            <span>Thu</span>
-                            <a href="#" title=""><i class="wi wi-day-showers"></i></a>
-                            <em>22°</em>
-                          </li>
-                          <li>
-                            <span>Fri</span>
-                            <a href="#" title=""><i class="wi wi-day-windy"></i></a>
-                            <em>26°</em>
-                          </li>
-                          <li>
-                            <span>Sat</span>
-                            <a href="#" title=""><i class="wi wi-day-sunny-overcast"></i></a>
-                            <em>30°</em>
-                          </li>
-                        </ul>
-                      </div>
+                    </div>
+                    <div class="monthly-weather">
+                      <ul>
+                        <li>
+                          <span>Sun</span>
+                          <a href="#" title=""><i class="wi wi-day-sunny"></i></a>
+                          <em>40°</em>
+                        </li>
+                        <li>
+                          <span>Mon</span>
+                          <a href="#" title=""><i class="wi wi-day-cloudy"></i></a>
+                          <em>10°</em>
+                        </li>
+                        <li>
+                          <span>Tue</span>
+                          <a href="#" title=""><i class="wi wi-day-hail"></i></a>
+                          <em>20°</em>
+                        </li>
+                        <li>
+                          <span>Wed</span>
+                          <a href="#" title=""><i class="wi wi-day-lightning"></i></a>
+                          <em>34°</em>
+                        </li>
+                        <li>
+                          <span>Thu</span>
+                          <a href="#" title=""><i class="wi wi-day-showers"></i></a>
+                          <em>22°</em>
+                        </li>
+                        <li>
+                          <span>Fri</span>
+                          <a href="#" title=""><i class="wi wi-day-windy"></i></a>
+                          <em>26°</em>
+                        </li>
+                        <li>
+                          <span>Sat</span>
+                          <a href="#" title=""><i class="wi wi-day-sunny-overcast"></i></a>
+                          <em>30°</em>
+                        </li>
+                      </ul>
+                    </div>
 
-                    </div><!-- Weather Widget -->
-                  </div><!-- weather widget-->
-                  <div class="widget">
-                    <h4 class="widget-title">Twitter feed</h4>
-                    <ul class="twiter-feed">
-                      <li>
-                        <i class="fa fa-twitter"></i>
-                        <span>
+                  </div><!-- Weather Widget -->
+                </div><!-- weather widget-->
+                <div class="widget">
+                  <h4 class="widget-title">Twitter feed</h4>
+                  <ul class="twiter-feed">
+                    <li>
+                      <i class="fa fa-twitter"></i>
+                      <span>
 													<i>jhon william</i>
 													@jhonwilliam
 												</span>
-                        <p>tomorrow with the company we were working and 5 child run away from the working place. <a href="#" title="">#daydream5k</a> </p>
-                        <em>2 hours ago</em>
-                      </li>
-                      <li>
-                        <i class="fa fa-twitter"></i>
-                        <span>
+                      <p>tomorrow with the company we were working and 5 child run away from the working place. <a
+                        href="#" title="">#daydream5k</a></p>
+                      <em>2 hours ago</em>
+                    </li>
+                    <li>
+                      <i class="fa fa-twitter"></i>
+                      <span>
 													<i>Kelly watson</i>
 													@kelly
 												</span>
-                        <p>tomorrow with the company we were working and 5 child run away from the working place. <a href="#" title="">#daydream5k</a> </p>
-                        <em>2 hours ago</em>
-                      </li>
-                      <li>
-                        <i class="fa fa-twitter"></i>
-                        <span>
+                      <p>tomorrow with the company we were working and 5 child run away from the working place. <a
+                        href="#" title="">#daydream5k</a></p>
+                      <em>2 hours ago</em>
+                    </li>
+                    <li>
+                      <i class="fa fa-twitter"></i>
+                      <span>
 													<i>Jony bravo</i>
 													@jonibravo
 												</span>
-                        <p>tomorrow with the company we were working and 5 child run away from the working place. <a href="#" title="">#daydream5k</a> </p>
-                        <em>2 hours ago</em>
-                      </li>
-                    </ul>
-                  </div><!-- twitter feed-->
-                  <div class="advertisment-box">
-                    <h4 class="">advertisment</h4>
-                    <figure>
-                      <a href="#" title="Advertisment"><img src="images/resources/ad-widget.gif" alt=""></a>
-                    </figure>
-                  </div><!-- advertisment box -->
-                  <div class="widget">
-                    <h4 class="widget-title">Shortcuts</h4>
-                    <ul class="naves">
-                      <li>
-                        <i class="ti-clipboard"></i>
-                        <a href="newsfeed.html" title="">News feed</a>
-                      </li>
-                      <li>
-                        <i class="ti-mouse-alt"></i>
-                        <a href="inbox.html" title="">Inbox</a>
-                      </li>
-                      <li>
-                        <i class="ti-files"></i>
-                        <a href="fav-page.html" title="">My pages</a>
-                      </li>
-                      <li>
-                        <i class="ti-user"></i>
-                        <a href="timeline-friends.html" title="">friends</a>
-                      </li>
-                      <li>
-                        <i class="ti-image"></i>
-                        <a href="timeline-photos.html" title="">images</a>
-                      </li>
-                      <li>
-                        <i class="ti-video-camera"></i>
-                        <a href="timeline-videos.html" title="">videos</a>
-                      </li>
-                      <li>
-                        <i class="ti-comments-smiley"></i>
-                        <a href="messages.html" title="">Messages</a>
-                      </li>
-                      <li>
-                        <i class="ti-bell"></i>
-                        <a href="notifications.html" title="">Notifications</a>
-                      </li>
-                      <li>
-                        <i class="ti-share"></i>
-                        <a href="people-nearby.html" title="">People Nearby</a>
-                      </li>
-                      <li>
-                        <i class="fa fa-bar-chart-o"></i>
-                        <a href="insights.html" title="">insights</a>
-                      </li>
-                      <li>
-                        <i class="ti-power-off"></i>
-                        <a href="landing.html" title="">Logout</a>
-                      </li>
-                    </ul>
-                  </div><!-- Shortcuts -->
-                  <div class="widget stick-widget">
-                    <h4 class="widget-title">Who's follownig</h4>
-                    <ul class="followers">
-                      <li>
-                        <figure><img src="images/resources/friend-avatar2.jpg" alt=""></figure>
-                        <div class="friend-meta">
-                          <h4><a href="time-line.html" title="">Kelly Bill</a></h4>
-                          <a href="#" title="" class="underline">Add Friend</a>
-                        </div>
-                      </li>
-                      <li>
-                        <figure><img src="images/resources/friend-avatar4.jpg" alt=""></figure>
-                        <div class="friend-meta">
-                          <h4><a href="time-line.html" title="">Issabel</a></h4>
-                          <a href="#" title="" class="underline">Add Friend</a>
-                        </div>
-                      </li>
-                      <li>
-                        <figure><img src="images/resources/friend-avatar6.jpg" alt=""></figure>
-                        <div class="friend-meta">
-                          <h4><a href="time-line.html" title="">Andrew</a></h4>
-                          <a href="#" title="" class="underline">Add Friend</a>
-                        </div>
-                      </li>
-                      <li>
-                        <figure><img src="images/resources/friend-avatar8.jpg" alt=""></figure>
-                        <div class="friend-meta">
-                          <h4><a href="time-line.html" title="">Sophia</a></h4>
-                          <a href="#" title="" class="underline">Add Friend</a>
-                        </div>
-                      </li>
-                      <li>
-                        <figure><img src="images/resources/friend-avatar3.jpg" alt=""></figure>
-                        <div class="friend-meta">
-                          <h4><a href="time-line.html" title="">Allen</a></h4>
-                          <a href="#" title="" class="underline">Add Friend</a>
-                        </div>
-                      </li>
-                    </ul>
-                  </div><!-- who's following -->
-                </aside>
-              </div><!-- sidebar -->
-              <div class="col-lg-6">
-                <div class="central-meta postbox">
-                  <span class="create-post">Create post</span>
-                  <div class="new-postbox">
-                    <figure>
-                      <img src="images/resources/admin.jpg" alt="">
-                    </figure>
-                    <div class="newpst-input">
-                      <form method="post">
-                        <textarea rows="2" placeholder="Share some what you are thinking?"></textarea>
-                      </form>
-                    </div>
-                    <div class="attachments">
-                      <ul>
-                        <li>
+                      <p>tomorrow with the company we were working and 5 child run away from the working place. <a
+                        href="#" title="">#daydream5k</a></p>
+                      <em>2 hours ago</em>
+                    </li>
+                  </ul>
+                </div><!-- twitter feed-->
+                <div class="advertisment-box">
+                  <h4 class="">advertisment</h4>
+                  <figure>
+                    <a href="#" title="Advertisment"><img src="images/resources/ad-widget.gif" alt=""></a>
+                  </figure>
+                </div><!-- advertisment box -->
+                <div class="widget">
+                  <h4 class="widget-title">Shortcuts</h4>
+                  <ul class="naves">
+                    <li>
+                      <i class="ti-clipboard"></i>
+                      <a href="newsfeed.html" title="">News feed</a>
+                    </li>
+                    <li>
+                      <i class="ti-mouse-alt"></i>
+                      <a href="inbox.html" title="">Inbox</a>
+                    </li>
+                    <li>
+                      <i class="ti-files"></i>
+                      <a href="fav-page.html" title="">My pages</a>
+                    </li>
+                    <li>
+                      <i class="ti-user"></i>
+                      <a href="timeline-friends.html" title="">friends</a>
+                    </li>
+                    <li>
+                      <i class="ti-image"></i>
+                      <a href="timeline-photos.html" title="">images</a>
+                    </li>
+                    <li>
+                      <i class="ti-video-camera"></i>
+                      <a href="timeline-videos.html" title="">videos</a>
+                    </li>
+                    <li>
+                      <i class="ti-comments-smiley"></i>
+                      <a href="messages.html" title="">Messages</a>
+                    </li>
+                    <li>
+                      <i class="ti-bell"></i>
+                      <a href="notifications.html" title="">Notifications</a>
+                    </li>
+                    <li>
+                      <i class="ti-share"></i>
+                      <a href="people-nearby.html" title="">People Nearby</a>
+                    </li>
+                    <li>
+                      <i class="fa fa-bar-chart-o"></i>
+                      <a href="insights.html" title="">insights</a>
+                    </li>
+                    <li>
+                      <i class="ti-power-off"></i>
+                      <a href="landing.html" title="">Logout</a>
+                    </li>
+                  </ul>
+                </div><!-- Shortcuts -->
+                <div class="widget stick-widget">
+                  <h4 class="widget-title">Who's follownig</h4>
+                  <ul class="followers">
+                    <li>
+                      <figure><img src="images/resources/friend-avatar2.jpg" alt=""></figure>
+                      <div class="friend-meta">
+                        <h4><a href="time-line.html" title="">Kelly Bill</a></h4>
+                        <a href="#" title="" class="underline">Add Friend</a>
+                      </div>
+                    </li>
+                    <li>
+                      <figure><img src="images/resources/friend-avatar4.jpg" alt=""></figure>
+                      <div class="friend-meta">
+                        <h4><a href="time-line.html" title="">Issabel</a></h4>
+                        <a href="#" title="" class="underline">Add Friend</a>
+                      </div>
+                    </li>
+                    <li>
+                      <figure><img src="images/resources/friend-avatar6.jpg" alt=""></figure>
+                      <div class="friend-meta">
+                        <h4><a href="time-line.html" title="">Andrew</a></h4>
+                        <a href="#" title="" class="underline">Add Friend</a>
+                      </div>
+                    </li>
+                    <li>
+                      <figure><img src="images/resources/friend-avatar8.jpg" alt=""></figure>
+                      <div class="friend-meta">
+                        <h4><a href="time-line.html" title="">Sophia</a></h4>
+                        <a href="#" title="" class="underline">Add Friend</a>
+                      </div>
+                    </li>
+                    <li>
+                      <figure><img src="images/resources/friend-avatar3.jpg" alt=""></figure>
+                      <div class="friend-meta">
+                        <h4><a href="time-line.html" title="">Allen</a></h4>
+                        <a href="#" title="" class="underline">Add Friend</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div><!-- who's following -->
+              </aside>
+            </div><!-- sidebar -->
+            <div class="col-lg-6">
+              <div class="central-meta postbox1">
+                <span class="create-post`1">Create post</span>
+                <form *ngIf="createForm" [formGroup]="createForm" (ngSubmit)="create()">
+                  <input *ngFor="let status of statuses; index as i" formControlName="status_id" type="checkbox" name="{{status.name}}" value="{{status.id}}">
+
+
+                  <!--                  <figure>-->
+                  <!--                    <img src="images/resources/admin.jpg" alt="">-->
+                  <!--                  </figure>-->
+
+
+                  <textarea formControlName="content" rows="2"
+                            placeholder="Share some what you are thinking?"></textarea>
+                  <input type="text" formControlName="image">
+
+                  <button class="post-btn" type="submit" >Post</button>
+                </form>
+
+                <div class="attachments">
+                  <ul>
+                    <li>
 													<span class="add-loc">
 														<i class="fa fa-map-marker"></i>
 													</span>
-                        </li>
-                        <li>
-                          <i class="fa fa-music"></i>
-                          <label class="fileContainer">
-                            <input type="file">
-                          </label>
-                        </li>
-                        <li>
-                          <i class="fa fa-image"></i>
-                          <label class="fileContainer">
-                            <input type="file">
-                          </label>
-                        </li>
-                        <li>
-                          <i class="fa fa-video-camera"></i>
-                          <label class="fileContainer">
-                            <input type="file">
-                          </label>
-                        </li>
-                        <li>
-                          <i class="fa fa-camera"></i>
-                          <label class="fileContainer">
-                            <input type="file">
-                          </label>
-                        </li>
-                        <li class="preview-btn">
-                          <button class="post-btn-preview" type="submit" data-ripple="">Preview</button>
-                        </li>
-                      </ul>
-                      <button class="post-btn" type="submit" data-ripple="">Post</button>
-                    </div>
-                    <div class="add-location-post">
-                      <span>Drag map point to selected area</span>
-                      <div class="row">
+                    </li>
+                    <li>
+                      <i class="fa fa-music"></i>
+                      <label class="fileContainer">
+                        <input type="file">
+                      </label>
+                    </li>
+                    <li>
+                      <i class="fa fa-image"></i>
+                      <label class="fileContainer">
+                        <input type="file">
+                      </label>
+                    </li>
+                    <li>
+                      <i class="fa fa-video-camera"></i>
+                      <label class="fileContainer">
+                        <input type="file">
+                      </label>
+                    </li>
+                    <li>
+                      <i class="fa fa-camera"></i>
+                      <label class="fileContainer">
+                        <input type="file">
+                      </label>
+                    </li>
+                    <li class="preview-btn">
+                      <button class="post-btn-preview" type="submit" data-ripple="">Preview</button>
+                    </li>
+                  </ul>
 
-                        <div class="col-lg-6">
-                          <label class="control-label">Lat :</label>
-                          <input type="text" class="" id="us3-lat" />
-                        </div>
-                        <div class="col-lg-6">
-                          <label>Long :</label>
-                          <input type="text" class="" id="us3-lon" />
-                        </div>
-                      </div>
-                      <!-- map -->
-                      <div id="us3"></div>
+                </div>
+
+                <div class="add-location-post">
+                  <span>Drag map point to selected area</span>
+                  <div class="row">
+
+                    <div class="col-lg-6">
+                      <label class="control-label">Lat :</label>
+                      <input type="text" class="" id="us3-lat"/>
+                    </div>
+                    <div class="col-lg-6">
+                      <label>Long :</label>
+                      <input type="text" class="" id="us3-lon"/>
                     </div>
                   </div>
-                </div><!-- add post new box -->
-                <div class="loadMore">
-                  <div class="central-meta item">
-                    <div class="user-post">
-                      <div class="friend-info">
-                        <figure>
-                          <img src="images/resources/nearly1.jpg" alt="">
-                        </figure>
-                        <div class="friend-name">
-                          <div class="more">
-                            <div class="more-post-optns"><i class="ti-more-alt"></i>
-                              <ul>
-                                <li><i class="fa fa-pencil-square-o"></i>Edit Post</li>
-                                <li><i class="fa fa-trash-o"></i>Delete Post</li>
-                                <li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>
-                                <li><i class="fa fa-address-card-o"></i>Boost This Post</li>
-                                <li><i class="fa fa-clock-o"></i>Schedule Post</li>
-                                <li><i class="fa fa-wpexplorer"></i>Select as featured</li>
-                                <li><i class="fa fa-bell-slash-o"></i>Turn off Notifications</li>
-                              </ul>
-                            </div>
-                          </div>
-                          <ins><a href="time-line.html" title="">{{userLogin.fullname}}</a> Post Album</ins>
-                          <span><i class="fa fa-globe"></i> published: September,15 2020 19:PM </span>
-                        </div>
-                        <div class="post-meta">
-                          <p>
-                            Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero.
-                          </p>
-                          <figure>
-                            <div class="img-bunch">
-                              <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                  <figure>
-                                    <a class="strip" href="images/resources/album1.jpg" title="" data-strip-group="mygroup" data-strip-group-options="loop: false">
-                                      <img src="images/resources/album1.jpg" alt="">
-                                    </a>
-                                  </figure>
-                                  <figure>
-                                    <a class="strip" href="images/resources/album2.jpg" title="" data-strip-group="mygroup" data-strip-group-options="loop: false">
-                                      <img src="images/resources/album2.jpg" alt="">
-                                    </a>
-                                  </figure>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                  <figure>
-                                    <a class="strip" href="images/resources/album6.jpg" title="" data-strip-group="mygroup" data-strip-group-options="loop: false">
-                                      <img src="images/resources/album6.jpg" alt="">
-                                    </a>
-                                  </figure>
-                                  <figure>
-                                    <a class="strip" href="images/resources/album5.jpg" title="" data-strip-group="mygroup" data-strip-group-options="loop: false">
-                                      <img src="images/resources/album5.jpg" alt="">
-                                    </a>
-                                  </figure>
-                                  <figure>
-                                    <a class="strip" href="images/resources/album4.jpg" title="" data-strip-group="mygroup" data-strip-group-options="loop: false">
-                                      <img src="images/resources/album4.jpg" alt="">
-                                    </a>
-                                    <div class="more-photos">
-                                      <span>+15</span>
-                                    </div>
-                                  </figure>
-                                </div>
-                              </div>
-                            </div>
-                            <ul class="like-dislike">
-                              <li><a class="bg-purple" href="#" title="Save to Pin Post"><i class="fa fa-thumb-tack"></i></a></li>
-                              <li><a class="bg-blue" href="#" title="Like Post"><i class="ti-thumb-up"></i></a></li>
-                              <li><a class="bg-red" href="#" title="dislike Post"><i class="ti-thumb-down"></i></a></li>
-                            </ul>
-                          </figure>
-                          <div class="we-video-info">
-                            <ul>
-                              <li>
-																<span class="views" title="views">
-																	<i class="fa fa-eye"></i>
-																	<ins>1.2k</ins>
-																</span>
-                              </li>
-                              <li>
-                                <div class="likes heart" title="Like/Dislike">❤ <span>2K</span></div>
-                              </li>
-                              <li>
-																<span class="comment" title="Comments">
-																	<i class="fa fa-commenting"></i>
-																	<ins>52</ins>
-																</span>
-                              </li>
-
-                              <li>
-																<span>
-																	<a class="share-pst" href="#" title="Share">
-																		<i class="fa fa-share-alt"></i>
-																	</a>
-																	<ins>20</ins>
-																</span>
-                              </li>
-                            </ul>
-                            <div class="users-thumb-list">
-                              <a data-toggle="tooltip" title="Anderw" href="#">
-                                <img alt="" src="images/resources/userlist-1.jpg">
-                              </a>
-                              <a data-toggle="tooltip" title="frank" href="#">
-                                <img alt="" src="images/resources/userlist-2.jpg">
-                              </a>
-                              <a data-toggle="tooltip" title="Sara" href="#">
-                                <img alt="" src="images/resources/userlist-3.jpg">
-                              </a>
-                              <a data-toggle="tooltip" title="Amy" href="#">
-                                <img alt="" src="images/resources/userlist-4.jpg">
-                              </a>
-                              <a data-toggle="tooltip" title="Ema" href="#">
-                                <img alt="" src="images/resources/userlist-5.jpg">
-                              </a>
-                              <span><strong>You</strong>, <b>Sarah</b> and <a href="#" title="">24+ more</a> liked</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="coment-area" style="display: block;">
-                          <ul class="we-comet">
-                            <li>
-                              <div class="comet-avatar">
-                                <img src="images/resources/nearly3.jpg" alt="">
-                              </div>
-                              <div class="we-comment">
-                                <h5><a href="time-line.html" title="">Jason borne</a></h5>
-                                <p>we are working for the dance and sing songs. this video is very awesome for the youngster. please vote this video and like our channel</p>
-                                <div class="inline-itms">
-                                  <span>1 year ago</span>
-                                  <a class="we-reply" href="#" title="Reply"><i class="fa fa-reply"></i></a>
-                                  <a href="#" title=""><i class="fa fa-heart"></i><span>20</span></a>
-                                </div>
-                              </div>
-
-                            </li>
-                            <li>
-                              <div class="comet-avatar">
-                                <img src="images/resources/comet-4.jpg" alt="">
-                              </div>
-                              <div class="we-comment">
-                                <h5><a href="time-line.html" title="">Sophia</a></h5>
-                                <p>we are working for the dance and sing songs. this video is very awesome for the youngster.
-                                  <i class="em em-smiley"></i>
-                                </p>
-                                <div class="inline-itms">
-                                  <span>1 year ago</span>
-                                  <a class="we-reply" href="#" title="Reply"><i class="fa fa-reply"></i></a>
-                                  <a href="#" title=""><i class="fa fa-heart"></i><span>20</span></a>
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <a href="#" title="" class="showmore underline">more comments+</a>
-                            </li>
-                            <li class="post-comment">
-                              <div class="comet-avatar">
-                                <img src="images/resources/nearly1.jpg" alt="">
-                              </div>
-                              <div class="post-comt-box">
-                                <form method="post">
-                                  <textarea placeholder="Post your comment"></textarea>
-                                  <div class="add-smiles">
-                                    <div class="uploadimage">
-                                      <i class="fa fa-image"></i>
-                                      <label class="fileContainer">
-                                        <input type="file">
-                                      </label>
-                                    </div>
-                                    <span class="em em-expressionless" title="add icon"></span>
-                                    <div class="smiles-bunch">
-                                      <i class="em em---1"></i>
-                                      <i class="em em-smiley"></i>
-                                      <i class="em em-anguished"></i>
-                                      <i class="em em-laughing"></i>
-                                      <i class="em em-angry"></i>
-                                      <i class="em em-astonished"></i>
-                                      <i class="em em-blush"></i>
-                                      <i class="em em-disappointed"></i>
-                                      <i class="em em-worried"></i>
-                                      <i class="em em-kissing_heart"></i>
-                                      <i class="em em-rage"></i>
-                                      <i class="em em-stuck_out_tongue"></i>
-                                    </div>
-                                  </div>
-
-                                  <button type="submit"></button>
-                                </form>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div><!-- album post -->
-                  <div class="central-meta item">
-                    <div class="user-post">
-                      <div class="friend-info">
-                        <figure>
-                          <img src="images/resources/nearly1.jpg" alt="">
-                        </figure>
-                        <div class="friend-name">
-                          <div class="more">
-                            <div class="more-post-optns"><i class="ti-more-alt"></i>
-                              <ul>
-                                <li><i class="fa fa-pencil-square-o"></i>Edit Post</li>
-                                <li><i class="fa fa-trash-o"></i>Delete Post</li>
-                                <li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>
-                                <li><i class="fa fa-address-card-o"></i>Boost This Post</li>
-                                <li><i class="fa fa-clock-o"></i>Schedule Post</li>
-                                <li><i class="fa fa-wpexplorer"></i>Select as featured</li>
-                                <li><i class="fa fa-bell-slash-o"></i>Turn off Notifications</li>
-                              </ul>
-                            </div>
-                          </div>
-                          <ins><a href="time-line.html" title="">Digital Market</a></ins>
-                          <span>sponsored <i class="fa fa-globe"></i></span>
-
-                        </div>
-                        <div class="post-meta">
-                          <figure>
-                            <img src="images/sponsors.gif" alt="">
-                            <ul class="like-dislike">
-                              <li><a class="bg-purple" href="#" title="Save to Pin Post"><i class="fa fa-thumb-tack"></i></a></li>
-                              <li><a class="bg-blue" href="#" title="Like Post"><i class="ti-thumb-up"></i></a></li>
-                              <li><a class="bg-red" href="#" title="dislike Post"><i class="ti-thumb-down"></i></a></li>
-                            </ul>
-                          </figure>
-                          <div class="description">
-                            <a href="#" class="learnmore" data-ripple="">Learn More</a>
-                            <p>
-                              Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc.
-
-                            </p>
-                          </div>
-                          <div class="we-video-info">
-                            <ul>
-                              <li>
-																<span class="views" title="views">
-																	<i class="fa fa-eye"></i>
-																	<ins>1.2k</ins>
-																</span>
-                              </li>
-                              <li>
-                                <div class="likes heart" title="Like/Dislike">❤ <span>2K</span></div>
-                              </li>
-                              <li>
-																<span class="comment" title="Comments">
-																	<i class="fa fa-commenting"></i>
-																	<ins>52</ins>
-																</span>
-                              </li>
-
-                              <li>
-																<span>
-																	<a class="share-pst" href="#" title="Share">
-																		<i class="fa fa-share-alt"></i>
-																	</a>
-																	<ins>20</ins>
-																</span>
-                              </li>
-                            </ul>
-                            <div class="users-thumb-list">
-                              <a data-toggle="tooltip" title="Anderw" href="#">
-                                <img alt="" src="images/resources/userlist-1.jpg">
-                              </a>
-                              <a data-toggle="tooltip" title="frank" href="#">
-                                <img alt="" src="images/resources/userlist-2.jpg">
-                              </a>
-                              <a data-toggle="tooltip" title="Sara" href="#">
-                                <img alt="" src="images/resources/userlist-3.jpg">
-                              </a>
-                              <a data-toggle="tooltip" title="Amy" href="#">
-                                <img alt="" src="images/resources/userlist-4.jpg">
-                              </a>
-                              <a data-toggle="tooltip" title="Ema" href="#">
-                                <img alt="" src="images/resources/userlist-5.jpg">
-                              </a>
-                              <span><strong>You</strong>, <b>Sarah</b> and <a href="#" title="">24+ more</a> liked</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="coment-area" style="">
-                          <ul class="we-comet">
-                            <li>
-                              <div class="comet-avatar">
-                                <img src="images/resources/nearly3.jpg" alt="">
-                              </div>
-                              <div class="we-comment">
-                                <h5><a href="time-line.html" title="">Jason borne</a></h5>
-                                <p>we are working for the dance and sing songs. this video is very awesome for the youngster. please vote this video and like our channel</p>
-                                <div class="inline-itms">
-                                  <span>1 year ago</span>
-                                  <a class="we-reply" href="#" title="Reply"><i class="fa fa-reply"></i></a>
-                                  <a href="#" title=""><i class="fa fa-heart"></i><span>20</span></a>
-                                </div>
-                              </div>
-
-                            </li>
-                            <li>
-                              <div class="comet-avatar">
-                                <img src="images/resources/comet-4.jpg" alt="">
-                              </div>
-                              <div class="we-comment">
-                                <h5><a href="time-line.html" title="">Sophia</a></h5>
-                                <p>we are working for the dance and sing songs. this video is very awesome for the youngster.
-                                  <i class="em em-smiley"></i>
-                                </p>
-                                <div class="inline-itms">
-                                  <span>1 year ago</span>
-                                  <a class="we-reply" href="#" title="Reply"><i class="fa fa-reply"></i></a>
-                                  <a href="#" title=""><i class="fa fa-heart"></i><span>20</span></a>
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <a href="#" title="" class="showmore underline">more comments+</a>
-                            </li>
-                            <li class="post-comment">
-                              <div class="comet-avatar">
-                                <img src="images/resources/nearly1.jpg" alt="">
-                              </div>
-                              <div class="post-comt-box">
-                                <form method="post">
-                                  <textarea placeholder="Post your comment"></textarea>
-                                  <div class="add-smiles">
-                                    <div class="uploadimage">
-                                      <i class="fa fa-image"></i>
-                                      <label class="fileContainer">
-                                        <input type="file">
-                                      </label>
-                                    </div>
-                                    <span class="em em-expressionless" title="add icon"></span>
-                                    <div class="smiles-bunch">
-                                      <i class="em em---1"></i>
-                                      <i class="em em-smiley"></i>
-                                      <i class="em em-anguished"></i>
-                                      <i class="em em-laughing"></i>
-                                      <i class="em em-angry"></i>
-                                      <i class="em em-astonished"></i>
-                                      <i class="em em-blush"></i>
-                                      <i class="em em-disappointed"></i>
-                                      <i class="em em-worried"></i>
-                                      <i class="em em-kissing_heart"></i>
-                                      <i class="em em-rage"></i>
-                                      <i class="em em-stuck_out_tongue"></i>
-                                    </div>
-                                  </div>
-
-                                  <button type="submit"></button>
-                                </form>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!-- digital sponsors -->
-                  <div class="central-meta item">
-                    <div class="user-post">
-                      <div class="friend-info">
-                        <figure>
-                          <img alt="" src="data:image/jpeg;base64,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">
-                        </figure>
-                        <div class="friend-name">
-                          <div class="more">
-                            <div class="more-post-optns"><i class="ti-more-alt"></i>
-                              <ul>
-                                <li><i class="fa fa-pencil-square-o"></i>Edit Post</li>
-                                <li><i class="fa fa-trash-o"></i>Delete Post</li>
-                                <li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>
-                                <li><i class="fa fa-address-card-o"></i>Boost This Post</li>
-                                <li><i class="fa fa-clock-o"></i>Schedule Post</li>
-                                <li><i class="fa fa-wpexplorer"></i>Select as featured</li>
-                                <li><i class="fa fa-bell-slash-o"></i>Turn off Notifications</li>
-                              </ul>
-                            </div>
-                          </div>
-                          <ins><a title="" href="time-line.html">Công chúa bong bóng</a></ins>
-                          <span>published: February,2 2022 19:PM</span>
-                        </div>
-                        <div class="description">
-                          <p>
-<!--                            Curabitur World's most beautiful car in <a title="" href="#">#test drive booking !</a> the most beatuiful car available in america and the saudia arabia, you can book your test drive by our official website-->
-                            Hôm nay tôi buồn
-                          </p>
-                        </div>
-                        <div class="post-meta">
-                          <div class="linked-image align-left">
-                            <a title="" href="#"><img alt="" src="https://nguoinoitieng.tv/images/nnt/97/0/bcjl.jpg"></a>
-                          </div>
-
-                          <ul class="like-dislike">
-                            <li><a class="bg-purple" href="#" title="Save to Pin Post"><i class="fa fa-thumb-tack"></i></a></li>
-                            <li><a class="bg-blue" href="#" title="Like Post"><i class="ti-thumb-up"></i></a></li>
-                            <li><a class="bg-red" href="#" title="dislike Post"><i class="ti-thumb-down"></i></a></li>
-                          </ul>
-                          <div class="we-video-info">
-                            <ul>
-                              <li>
-																<span class="views" title="views">
-																	<i class="fa fa-eye"></i>
-																	<ins>1.2k</ins>
-																</span>
-                              </li>
-                              <li>
-                                <div class="likes heart" title="Like/Dislike">❤ <span>2K</span></div>
-                              </li>
-                              <li>
-																<span class="comment" title="Comments">
-																	<i class="fa fa-commenting"></i>
-																	<ins>52</ins>
-																</span>
-                              </li>
-
-                              <li>
-																<span>
-																	<a class="share-pst" href="#" title="Share">
-																		<i class="fa fa-share-alt"></i>
-																	</a>
-																	<ins>20</ins>
-																</span>
-                              </li>
-                            </ul>
-                            <div class="users-thumb-list">
-                              <a data-toggle="tooltip" title="Anderw" href="#">
-                                <img alt="" src="images/resources/userlist-1.jpg">
-                              </a>
-                              <a data-toggle="tooltip" title="frank" href="#">
-                                <img alt="" src="images/resources/userlist-2.jpg">
-                              </a>
-                              <a data-toggle="tooltip" title="Sara" href="#">
-                                <img alt="" src="images/resources/userlist-3.jpg">
-                              </a>
-                              <a data-toggle="tooltip" title="Amy" href="#">
-                                <img alt="" src="images/resources/userlist-4.jpg">
-                              </a>
-                              <a data-toggle="tooltip" title="Ema" href="#">
-                                <img alt="" src="images/resources/userlist-5.jpg">
-                              </a>
-                              <span><strong>You</strong>, <b>Sarah</b> and <a href="#" title="">24+ more</a> liked</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="coment-area" style="">
-                          <ul class="we-comet">
-                            <li>
-                              <div class="comet-avatar">
-                                <img src="images/resources/nearly3.jpg" alt="">
-                              </div>
-                              <div class="we-comment">
-                                <h5><a href="time-line.html" title="">Jason borne</a></h5>
-                                <p>we are working for the dance and sing songs. this video is very awesome for the youngster. please vote this video and like our channel</p>
-                                <div class="inline-itms">
-                                  <span>1 year ago</span>
-                                  <a class="we-reply" href="#" title="Reply"><i class="fa fa-reply"></i></a>
-                                  <a href="#" title=""><i class="fa fa-heart"></i><span>20</span></a>
-                                </div>
-                              </div>
-
-                            </li>
-                            <li>
-                              <div class="comet-avatar">
-                                <img src="images/resources/comet-4.jpg" alt="">
-                              </div>
-                              <div class="we-comment">
-                                <h5><a href="time-line.html" title="">Sophia</a></h5>
-                                <p>we are working for the dance and sing songs. this video is very awesome for the youngster.
-                                  <i class="em em-smiley"></i>
-                                </p>
-                                <div class="inline-itms">
-                                  <span>1 year ago</span>
-                                  <a class="we-reply" href="#" title="Reply"><i class="fa fa-reply"></i></a>
-                                  <a href="#" title=""><i class="fa fa-heart"></i><span>20</span></a>
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <a href="#" title="" class="showmore underline">more comments+</a>
-                            </li>
-                            <li class="post-comment">
-                              <div class="comet-avatar">
-                                <img src="images/resources/nearly1.jpg" alt="">
-                              </div>
-                              <div class="post-comt-box">
-                                <form method="post">
-                                  <textarea placeholder="Post your comment"></textarea>
-                                  <div class="add-smiles">
-                                    <div class="uploadimage">
-                                      <i class="fa fa-image"></i>
-                                      <label class="fileContainer">
-                                        <input type="file">
-                                      </label>
-                                    </div>
-                                    <span class="em em-expressionless" title="add icon"></span>
-                                    <div class="smiles-bunch">
-                                      <i class="em em---1"></i>
-                                      <i class="em em-smiley"></i>
-                                      <i class="em em-anguished"></i>
-                                      <i class="em em-laughing"></i>
-                                      <i class="em em-angry"></i>
-                                      <i class="em em-astonished"></i>
-                                      <i class="em em-blush"></i>
-                                      <i class="em em-disappointed"></i>
-                                      <i class="em em-worried"></i>
-                                      <i class="em em-kissing_heart"></i>
-                                      <i class="em em-rage"></i>
-                                      <i class="em em-stuck_out_tongue"></i>
-                                    </div>
-                                  </div>
-
-                                  <button type="submit"></button>
-                                </form>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!-- love post -->
-                  <div class="central-meta item">
-                    <div class="user-post">
-                      <div class="friend-info">
-                        <figure>
-                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv42ScWdVy851FjxIqQng5OwcyE-gMP6E6sg&usqp=CAU" alt="">
-                        </figure>
-                        <div class="friend-name">
-                          <div class="more">
-                            <div class="more-post-optns"><i class="ti-more-alt"></i>
-                              <ul>
-                                <li><i class="fa fa-pencil-square-o"></i>Edit Post</li>
-                                <li><i class="fa fa-trash-o"></i>Delete Post</li>
-                                <li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>
-                                <li><i class="fa fa-address-card-o"></i>Boost This Post</li>
-                                <li><i class="fa fa-clock-o"></i>Schedule Post</li>
-                                <li><i class="fa fa-wpexplorer"></i>Select as featured</li>
-                                <li><i class="fa fa-bell-slash-o"></i>Turn off Notifications</li>
-                              </ul>
-                            </div>
-                          </div>
-                          <ins><a href="time-line.html" title="">Hoàng tử gió</a></ins>
-                          <span>published: February,10 2022 20:PM</span>
-                        </div>
-                        <div class="post-meta">
-                          <div class="description">
-                            <p>
-<!--                              World's most beautiful car in Curabitur <a href="#" title="">#test drive booking !</a> the most beatuiful car available in america and the saudia arabia, you can book your test drive by our official website-->
-                                Này kô pé oy!!!!
-                            </p>
-                          </div>
-                          <div class="linked-image align-left">
-                            <a title="" href="#"><img alt="" src="data:image/jpeg;base64,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"></a>
-                          </div>
-
-                          <ul class="like-dislike">
-                            <li><a href="#" title="Save to Pin Post"><i class="fa fa-thumb-tack"></i></a></li>
-                            <li><a href="#" title="Like Post"><i class="ti-thumb-up"></i></a></li>
-                            <li><a href="#" title="dislike Post"><i class="ti-thumb-down"></i></a></li>
-                          </ul>
-                          <div class="we-video-info">
-                            <ul>
-                              <li>
-																<span class="views" title="views">
-																	<i class="fa fa-eye"></i>
-																	<ins>1.2k</ins>
-																</span>
-                              </li>
-                              <li>
-                                <div class="likes heart" title="Like/Dislike">❤ <span>2K</span></div>
-                              </li>
-                              <li>
-																<span class="comment" title="Comments">
-																	<i class="fa fa-commenting"></i>
-																	<ins>52</ins>
-																</span>
-                              </li>
-
-                              <li>
-																<span>
-																	<a class="share-pst" href="#" title="Share">
-																		<i class="fa fa-share-alt"></i>
-																	</a>
-																	<ins>20</ins>
-																</span>
-                              </li>
-                            </ul>
-                            <div class="users-thumb-list">
-                              <a data-toggle="tooltip" title="Anderw" href="#">
-                                <img alt="" src="images/resources/userlist-1.jpg">
-                              </a>
-                              <a data-toggle="tooltip" title="frank" href="#">
-                                <img alt="" src="images/resources/userlist-2.jpg">
-                              </a>
-                              <a data-toggle="tooltip" title="Sara" href="#">
-                                <img alt="" src="images/resources/userlist-3.jpg">
-                              </a>
-                              <a data-toggle="tooltip" title="Amy" href="#">
-                                <img alt="" src="images/resources/userlist-4.jpg">
-                              </a>
-                              <a data-toggle="tooltip" title="Ema" href="#">
-                                <img alt="" src="images/resources/userlist-5.jpg">
-                              </a>
-                              <span><strong>You</strong>, <b>Sarah</b> and <a href="#" title="">24+ more</a> liked</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="coment-area" style="">
-                          <ul class="we-comet">
-                            <li>
-                              <div class="comet-avatar">
-                                <img src="images/resources/nearly3.jpg" alt="">
-                              </div>
-                              <div class="we-comment">
-                                <h5><a href="time-line.html" title="">Jason borne</a></h5>
-                                <p>we are working for the dance and sing songs. this video is very awesome for the youngster. please vote this video and like our channel</p>
-                                <div class="inline-itms">
-                                  <span>1 year ago</span>
-                                  <a class="we-reply" href="#" title="Reply"><i class="fa fa-reply"></i></a>
-                                  <a href="#" title=""><i class="fa fa-heart"></i><span>20</span></a>
-                                </div>
-                              </div>
-
-                            </li>
-                            <li>
-                              <div class="comet-avatar">
-                                <img src="images/resources/comet-4.jpg" alt="">
-                              </div>
-                              <div class="we-comment">
-                                <h5><a href="time-line.html" title="">Sophia</a></h5>
-                                <p>we are working for the dance and sing songs. this video is very awesome for the youngster.
-                                  <i class="em em-smiley"></i>
-                                </p>
-                                <div class="inline-itms">
-                                  <span>1 year ago</span>
-                                  <a class="we-reply" href="#" title="Reply"><i class="fa fa-reply"></i></a>
-                                  <a href="#" title=""><i class="fa fa-heart"></i><span>20</span></a>
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <a href="#" title="" class="showmore underline">more comments+</a>
-                            </li>
-                            <li class="post-comment">
-                              <div class="comet-avatar">
-                                <img src="images/resources/nearly1.jpg" alt="">
-                              </div>
-                              <div class="post-comt-box">
-                                <form method="post">
-                                  <textarea placeholder="Post your comment"></textarea>
-                                  <div class="add-smiles">
-                                    <div class="uploadimage">
-                                      <i class="fa fa-image"></i>
-                                      <label class="fileContainer">
-                                        <input type="file">
-                                      </label>
-                                    </div>
-                                    <span class="em em-expressionless" title="add icon"></span>
-                                    <div class="smiles-bunch">
-                                      <i class="em em---1"></i>
-                                      <i class="em em-smiley"></i>
-                                      <i class="em em-anguished"></i>
-                                      <i class="em em-laughing"></i>
-                                      <i class="em em-angry"></i>
-                                      <i class="em em-astonished"></i>
-                                      <i class="em em-blush"></i>
-                                      <i class="em em-disappointed"></i>
-                                      <i class="em em-worried"></i>
-                                      <i class="em em-kissing_heart"></i>
-                                      <i class="em em-rage"></i>
-                                      <i class="em em-stuck_out_tongue"></i>
-                                    </div>
-                                  </div>
-
-                                  <button type="submit"></button>
-                                </form>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!-- without image -->
-                  <div class="central-meta item">
-                    <div class="user-post">
-                      <div class="friend-info">
-                        <figure>
-                          <img src="https://scontent.fhan15-1.fna.fbcdn.net/v/t39.30808-6/273042795_659223438551558_6311218819834062783_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=qVyC0_FtV6IAX-vtZUY&_nc_ht=scontent.fhan15-1.fna&oh=00_AT-zhwElxctMonUB-yk8SMXA7LO75ZT_v25pfBspFiofyw&oe=620BCA90" alt="">
-                        </figure>
-                        <div class="friend-name">
-                          <div class="more">
-                            <div class="more-post-optns"><i class="ti-more-alt"></i>
-                              <ul>
-                                <li><i class="fa fa-pencil-square-o"></i>Edit Post</li>
-                                <li><i class="fa fa-trash-o"></i>Delete Post</li>
-                                <li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>
-                                <li><i class="fa fa-address-card-o"></i>Boost This Post</li>
-                                <li><i class="fa fa-clock-o"></i>Schedule Post</li>
-                                <li><i class="fa fa-wpexplorer"></i>Select as featured</li>
-                                <li><i class="fa fa-bell-slash-o"></i>Turn off Notifications</li>
-                              </ul>
-                            </div>
-                          </div>
-                          <ins><a href="time-line.html" title="">Hà Thu</a> shared location</ins>
-                          <span><i class="fa fa-globe"></i> published: February,11 2022 19:PM</span>
-                        </div>
-                        <div class="post-meta">
-                            <ul class="like-dislike">
-                              <li><a class="bg-purple" href="#" title="Save to Pin Post"><i class="fa fa-thumb-tack"></i></a></li>
-                              <li><a class="bg-blue" href="#" title="Like Post"><i class="ti-thumb-up"></i></a></li>
-                              <li><a class="bg-red" href="#" title="dislike Post"><i class="ti-thumb-down"></i></a></li>
-                            </ul>
-                          <!-- near by map -->
-
-                          <div class="description">
-                            <p>
-                              Mang tiền về cho mẹ
-                              <!--                              Curabitur Lonely Cat Enjoying in Summer <a href="#" title="">#mypage</a> ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc,-->
-                            </p>
-                            <div class="linked-image align-left">
-                              <a title="" href="#"><img alt="" src="https://scontent.fhan15-1.fna.fbcdn.net/v/t39.30808-6/240667742_583525852787984_2383180204469162195_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=174925&_nc_ohc=avs7gmXqJNsAX_EN8mP&tn=3aMEEpTFcedhIgGT&_nc_ht=scontent.fhan15-1.fna&oh=00_AT_qMBeIg7NVQPA2G99Do07AwsXRmbIhk9hmjUpbllRAuA&oe=620B4B74"></a>
-                            </div>
-                          </div>
-                          <div class="we-video-info">
-                            <ul>
-                              <li>
-																<span class="views" title="views">
-																	<i class="fa fa-eye"></i>
-																	<ins>1.2k</ins>
-																</span>
-                              </li>
-                              <li>
-                                <div class="likes heart" title="Like/Dislike">❤ <span>2K</span></div>
-                              </li>
-                              <li>
-																<span class="comment" title="Comments">
-																	<i class="fa fa-commenting"></i>
-																	<ins>52</ins>
-																</span>
-                              </li>
-
-                              <li>
-																<span>
-																	<a class="share-pst" href="#" title="Share">
-																		<i class="fa fa-share-alt"></i>
-																	</a>
-																	<ins>20</ins>
-																</span>
-                              </li>
-                            </ul>
-                            <div class="users-thumb-list">
-                              <a data-toggle="tooltip" title="Anderw" href="#">
-                                <img alt="" src="images/resources/userlist-1.jpg">
-                              </a>
-                              <a data-toggle="tooltip" title="frank" href="#">
-                                <img alt="" src="images/resources/userlist-2.jpg">
-                              </a>
-                              <a data-toggle="tooltip" title="Sara" href="#">
-                                <img alt="" src="images/resources/userlist-3.jpg">
-                              </a>
-                              <a data-toggle="tooltip" title="Amy" href="#">
-                                <img alt="" src="images/resources/userlist-4.jpg">
-                              </a>
-                              <a data-toggle="tooltip" title="Ema" href="#">
-                                <img alt="" src="images/resources/userlist-5.jpg">
-                              </a>
-                              <span><strong>You</strong>, <b>Sarah</b> and <a href="#" title="">24+ more</a> liked</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="coment-area" style="">
-                          <ul class="we-comet">
-                            <li>
-                              <div class="comet-avatar">
-                                <img src="images/resources/nearly3.jpg" alt="">
-                              </div>
-                              <div class="we-comment">
-                                <h5><a href="time-line.html" title="">Jason borne</a></h5>
-                                <p>we are working for the dance and sing songs. this video is very awesome for the youngster. please vote this video and like our channel</p>
-                                <div class="inline-itms">
-                                  <span>1 year ago</span>
-                                  <a class="we-reply" href="#" title="Reply"><i class="fa fa-reply"></i></a>
-                                  <a href="#" title=""><i class="fa fa-heart"></i><span>20</span></a>
-                                </div>
-                              </div>
-
-                            </li>
-                            <li>
-                              <div class="comet-avatar">
-                                <img src="images/resources/comet-4.jpg" alt="">
-                              </div>
-                              <div class="we-comment">
-                                <h5><a href="time-line.html" title="">Sophia</a></h5>
-                                <p>we are working for the dance and sing songs. this video is very awesome for the youngster.
-                                  <i class="em em-smiley"></i>
-                                </p>
-                                <div class="inline-itms">
-                                  <span>1 year ago</span>
-                                  <a class="we-reply" href="#" title="Reply"><i class="fa fa-reply"></i></a>
-                                  <a href="#" title=""><i class="fa fa-heart"></i><span>20</span></a>
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <a href="#" title="" class="showmore underline">more comments+</a>
-                            </li>
-                            <li class="post-comment">
-                              <div class="comet-avatar">
-                                <img src="images/resources/nearly1.jpg" alt="">
-                              </div>
-                              <div class="post-comt-box">
-                                <form method="post">
-                                  <textarea placeholder="Post your comment"></textarea>
-                                  <div class="add-smiles">
-                                    <div class="uploadimage">
-                                      <i class="fa fa-image"></i>
-                                      <label class="fileContainer">
-                                        <input type="file">
-                                      </label>
-                                    </div>
-                                    <span class="em em-expressionless" title="add icon"></span>
-                                    <div class="smiles-bunch">
-                                      <i class="em em---1"></i>
-                                      <i class="em em-smiley"></i>
-                                      <i class="em em-anguished"></i>
-                                      <i class="em em-laughing"></i>
-                                      <i class="em em-angry"></i>
-                                      <i class="em em-astonished"></i>
-                                      <i class="em em-blush"></i>
-                                      <i class="em em-disappointed"></i>
-                                      <i class="em em-worried"></i>
-                                      <i class="em em-kissing_heart"></i>
-                                      <i class="em em-rage"></i>
-                                      <i class="em em-stuck_out_tongue"></i>
-                                    </div>
-                                  </div>
-
-                                  <button type="submit"></button>
-                                </form>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!-- map location post -->
-                  <div class="central-meta item">
-                    <div class="user-post">
-                      <div class="friend-info">
-                        <figure>
-                          <img src="images/resources/nearly1.jpg" alt="">
-                        </figure>
-                        <div class="friend-name">
-                          <div class="more">
-                            <div class="more-post-optns"><i class="ti-more-alt"></i>
-                              <ul>
-                                <li><i class="fa fa-pencil-square-o"></i>Edit Post</li>
-                                <li><i class="fa fa-trash-o"></i>Delete Post</li>
-                                <li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>
-                                <li><i class="fa fa-address-card-o"></i>Boost This Post</li>
-                                <li><i class="fa fa-clock-o"></i>Schedule Post</li>
-                                <li><i class="fa fa-wpexplorer"></i>Select as featured</li>
-                                <li><i class="fa fa-bell-slash-o"></i>Turn off Notifications</li>
-                              </ul>
-                            </div>
-                          </div>
-                          <ins><a href="time-line.html" title="">Jack Carter</a> share <a href="#" title="">link</a></ins>
-                          <span><i class="fa fa-globe"></i> published: january,5 2010 19:PM </span>
-                        </div>
-                        <div class="post-meta">
-                          <figure>
-                            <a href="https://www.youtube.com/watch?v=fF382gwEnG8" title="" data-strip-group="mygroup" class="strip vdeo-link" data-strip-options="width: 700,height: 450,youtube: { autoplay: 1 }">
-                              <img src="images/resources/user-post.jpg" alt="">
-                              <i>
-                                <svg version="1.1" class="play" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="55px" width="55px"
-                                     viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-															  <path class="stroke-solid" fill="none" stroke=""  d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7
-																C97.3,23.7,75.7,2.3,49.9,2.5"/>
-                                  <path class="icon" fill="" d="M38,69c-1,0.5-1.8,0-1.8-1.1V32.1c0-1.1,0.8-1.6,1.8-1.1l34,18c1,0.5,1,1.4,0,1.9L38,69z"/>
-																</svg>
-                              </i>
-                              <h2>Canada tourist spots you must visit in 2020</h2>
-                            </a>
-                            <ul class="like-dislike">
-                              <li><a class="bg-purple" href="#" title="Save to Pin Post"><i class="fa fa-thumb-tack"></i></a></li>
-                              <li><a class="bg-blue" href="#" title="Like Post"><i class="ti-thumb-up"></i></a></li>
-                              <li><a class="bg-red" href="#" title="dislike Post"><i class="ti-thumb-down"></i></a></li>
-                            </ul>
-
-                          </figure>
-                          <div class="description">
-                            <p>
-                              Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc.
-                            </p>
-                          </div>
-                          <div class="we-video-info">
-                            <ul>
-                              <li>
-																<span class="views" title="views">
-																	<i class="fa fa-eye"></i>
-																	<ins>1.2k</ins>
-																</span>
-                              </li>
-                              <li>
-                                <div class="likes heart" title="Like/Dislike">❤ <span>2K</span></div>
-                              </li>
-                              <li>
-																<span class="comment" title="Comments">
-																	<i class="fa fa-commenting"></i>
-																	<ins>52</ins>
-																</span>
-                              </li>
-
-                              <li>
-																<span>
-																	<a class="share-pst" href="#" title="Share">
-																		<i class="fa fa-share-alt"></i>
-																	</a>
-																	<ins>20</ins>
-																</span>
-                              </li>
-                            </ul>
-                            <div class="users-thumb-list">
-                              <a data-toggle="tooltip" title="Anderw" href="#">
-                                <img alt="" src="images/resources/userlist-1.jpg">
-                              </a>
-                              <a data-toggle="tooltip" title="frank" href="#">
-                                <img alt="" src="images/resources/userlist-2.jpg">
-                              </a>
-                              <a data-toggle="tooltip" title="Sara" href="#">
-                                <img alt="" src="images/resources/userlist-3.jpg">
-                              </a>
-                              <a data-toggle="tooltip" title="Amy" href="#">
-                                <img alt="" src="images/resources/userlist-4.jpg">
-                              </a>
-                              <a data-toggle="tooltip" title="Ema" href="#">
-                                <img alt="" src="images/resources/userlist-5.jpg">
-                              </a>
-                              <span><strong>You</strong>, <b>Sarah</b> and <a href="#" title="">24+ more</a> liked</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="coment-area" style="">
-                          <ul class="we-comet">
-                            <li>
-                              <div class="comet-avatar">
-                                <img src="images/resources/nearly3.jpg" alt="">
-                              </div>
-                              <div class="we-comment">
-                                <h5><a href="time-line.html" title="">Jason borne</a></h5>
-                                <p>we are working for the dance and sing songs. this video is very awesome for the youngster. please vote this video and like our channel</p>
-                                <div class="inline-itms">
-                                  <span>1 year ago</span>
-                                  <a class="we-reply" href="#" title="Reply"><i class="fa fa-reply"></i></a>
-                                  <a href="#" title=""><i class="fa fa-heart"></i><span>20</span></a>
-                                </div>
-                              </div>
-
-                            </li>
-                            <li>
-                              <div class="comet-avatar">
-                                <img src="images/resources/comet-4.jpg" alt="">
-                              </div>
-                              <div class="we-comment">
-                                <h5><a href="time-line.html" title="">Sophia</a></h5>
-                                <p>we are working for the dance and sing songs. this video is very awesome for the youngster.
-                                  <i class="em em-smiley"></i>
-                                </p>
-                                <div class="inline-itms">
-                                  <span>1 year ago</span>
-                                  <a class="we-reply" href="#" title="Reply"><i class="fa fa-reply"></i></a>
-                                  <a href="#" title=""><i class="fa fa-heart"></i><span>20</span></a>
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <a href="#" title="" class="showmore underline">more comments+</a>
-                            </li>
-                            <li class="post-comment">
-                              <div class="comet-avatar">
-                                <img src="images/resources/nearly1.jpg" alt="">
-                              </div>
-                              <div class="post-comt-box">
-                                <form method="post">
-                                  <textarea placeholder="Post your comment"></textarea>
-                                  <div class="add-smiles">
-                                    <div class="uploadimage">
-                                      <i class="fa fa-image"></i>
-                                      <label class="fileContainer">
-                                        <input type="file">
-                                      </label>
-                                    </div>
-                                    <span class="em em-expressionless" title="add icon"></span>
-                                    <div class="smiles-bunch">
-                                      <i class="em em---1"></i>
-                                      <i class="em em-smiley"></i>
-                                      <i class="em em-anguished"></i>
-                                      <i class="em em-laughing"></i>
-                                      <i class="em em-angry"></i>
-                                      <i class="em em-astonished"></i>
-                                      <i class="em em-blush"></i>
-                                      <i class="em em-disappointed"></i>
-                                      <i class="em em-worried"></i>
-                                      <i class="em em-kissing_heart"></i>
-                                      <i class="em em-rage"></i>
-                                      <i class="em em-stuck_out_tongue"></i>
-                                    </div>
-                                  </div>
-                                  <button type="submit"></button>
-                                </form>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!-- video post -->
+                  <!-- map -->
+                  <div id="us3"></div>
                 </div>
-              </div><!-- centerl meta -->
-              <div class="col-lg-3">
-                <aside class="sidebar static right">
-                  <div class="widget">
-                    <h4 class="widget-title">Your page</h4>
-                    <div class="your-page">
+              </div><!-- add post new box -->
+
+              <div class="loadMore" *ngFor="let post of posts;index as i">
+                <div class="central-meta item">
+                  <div class="user-post">
+                    <div class="friend-info">
                       <figure>
-                        <a href="#" title=""><img src="images/resources/friend-avatar9.jpg" alt=""></a>
+                        <img src="{{post.user.image}}" alt="">
                       </figure>
-                      <div class="page-meta">
-                        <a href="#" title="" class="underline">My Creative Page</a>
-                        <span><i class="ti-comment"></i><a href="insight.html" title="">Messages <em>9</em></a></span>
-                        <span><i class="ti-bell"></i><a href="insight.html" title="">Notifications <em>2</em></a></span>
+                      <div class="friend-name">
+                        <div class="more">
+                          <div class="more-post-optns"><i class="ti-more-alt"></i>
+                            <ul>
+                              <li><i class="fa fa-pencil-square-o"></i>Edit Post</li>
+                              <li><i class="fa fa-trash-o"></i>Delete Post</li>
+                              <li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>
+                              <li><i class="fa fa-address-card-o"></i>Boost This Post</li>
+                              <li><i class="fa fa-clock-o"></i>Schedule Post</li>
+                              <li><i class="fa fa-wpexplorer"></i>Select as featured</li>
+                              <li><i class="fa fa-bell-slash-o"></i>Turn off Notifications</li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <ins><a href="time-line.html" title="">{{post.user.fullname}}</a></ins>
+                        <!--                        <span><i class="fa fa-globe"></i> {{post.status}}</span>-->
                       </div>
-                      <ul class="page-publishes">
-                        <li>
-                          <span><i class="ti-pencil-alt"></i>Publish</span>
-                        </li>
-                        <li>
-                          <span><i class="ti-camera"></i>Photo</span>
-                        </li>
-                        <li>
-                          <span><i class="ti-video-camera"></i>Live</span>
-                        </li>
-                        <li>
-                          <span><i class="fa fa-user-plus"></i>Invite</span>
-                        </li>
+                      <div class="post-meta">
+                        <p>
+                          {{post.content}}
+                        </p>
+                        <figure>
+                          <div class="img-bunch">
+                            <div class="row">
+                              <div class="col-lg-6 col-md-6 col-sm-6">
+                                <figure>
+                                  <a class="strip" href="images/resources/album1.jpg" title=""
+                                     data-strip-group="mygroup" data-strip-group-options="loop: false">
+                                    <img src="{{post.image}}" alt="">
+                                  </a>
+                                </figure>
+                                <figure>
+                                  <a class="strip" href="images/resources/album2.jpg" title=""
+                                     data-strip-group="mygroup" data-strip-group-options="loop: false">
+                                    <img src="images/resources/album2.jpg" alt="">
+                                  </a>
+                                </figure>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-6">
+                                <figure>
+                                  <a class="strip" href="images/resources/album6.jpg" title=""
+                                     data-strip-group="mygroup" data-strip-group-options="loop: false">
+                                    <img src="images/resources/album6.jpg" alt="">
+                                  </a>
+                                </figure>
+                                <figure>
+                                  <a class="strip" href="images/resources/album5.jpg" title=""
+                                     data-strip-group="mygroup" data-strip-group-options="loop: false">
+                                    <img src="images/resources/album5.jpg" alt="">
+                                  </a>
+                                </figure>
+                                <figure>
+                                  <a class="strip" href="images/resources/album4.jpg" title=""
+                                     data-strip-group="mygroup" data-strip-group-options="loop: false">
+                                    <img src="images/resources/album4.jpg" alt="">
+                                  </a>
+                                  <div class="more-photos">
+                                    <span>+15</span>
+                                  </div>
+                                </figure>
+                              </div>
+                            </div>
+                          </div>
+                          <!--                          <ul class="like-dislike">-->
+                          <!--                            <li><a class="bg-purple" href="#" title="Save to Pin Post"><i-->
+                          <!--                              class="fa fa-thumb-tack"></i></a></li>-->
+                          <!--                            <li><a class="bg-blue" href="#" title="Like Post"><i class="ti-thumb-up"></i></a></li>-->
+                          <!--                            <li><a class="bg-red" href="#" title="dislike Post"><i class="ti-thumb-down"></i></a></li>-->
+                          <!--                          </ul>-->
+                        </figure>
+                        <div class="we-video-info">
+                          <ul>
+                            <li>
+																<span class="views" title="views">
+																	<i class="fa fa-eye"></i>
+																	<ins>1.2k</ins>
+																</span>
+                            </li>
+                            <li>
+                              <div class="likes heart" title="Like/Dislike">❤ <span>2K</span></div>
+                            </li>
+                            <li>
+																<span class="comment" title="Comments">
+																	<i class="fa fa-commenting"></i>
+																	<ins>52</ins>
+																</span>
+                            </li>
+
+                            <li>
+																<span>
+																	<a class="share-pst" href="#" title="Share">
+																		<i class="fa fa-share-alt"></i>
+																	</a>
+																	<ins>20</ins>
+																</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!--                      comment input-->
+                      <!--                      <div class="coment-area" style="display: block;">-->
+                      <!--                        <ul class="we-comet">-->
+                      <!--                          <li>-->
+                      <!--                            <div class="comet-avatar">-->
+                      <!--                              <img src="images/resources/nearly3.jpg" alt="">-->
+                      <!--                            </div>-->
+                      <!--                            <div class="we-comment">-->
+                      <!--                              <h5><a href="time-line.html" title="">Jason borne</a></h5>-->
+                      <!--                              <p>we are working for the dance and sing songs. this video is very awesome for the-->
+                      <!--                                youngster. please vote this video and like our channel</p>-->
+                      <!--                              <div class="inline-itms">-->
+                      <!--                                <span>1 year ago</span>-->
+                      <!--                                <a class="we-reply" href="#" title="Reply"><i class="fa fa-reply"></i></a>-->
+                      <!--                                <a href="#" title=""><i class="fa fa-heart"></i><span>20</span></a>-->
+                      <!--                              </div>-->
+                      <!--                            </div>-->
+
+                      <!--                          </li>-->
+                      <!--                          <li>-->
+                      <!--                            <div class="comet-avatar">-->
+                      <!--                              <img src="images/resources/comet-4.jpg" alt="">-->
+                      <!--                            </div>-->
+                      <!--                            <div class="we-comment">-->
+                      <!--                              <h5><a href="time-line.html" title="">Sophia</a></h5>-->
+                      <!--                              <p>we are working for the dance and sing songs. this video is very awesome for the-->
+                      <!--                                youngster.-->
+                      <!--                                <i class="em em-smiley"></i>-->
+                      <!--                              </p>-->
+                      <!--                              <div class="inline-itms">-->
+                      <!--                                <span>1 year ago</span>-->
+                      <!--                                <a class="we-reply" href="#" title="Reply"><i class="fa fa-reply"></i></a>-->
+                      <!--                                <a href="#" title=""><i class="fa fa-heart"></i><span>20</span></a>-->
+                      <!--                              </div>-->
+                      <!--                            </div>-->
+                      <!--                          </li>-->
+                      <!--                          <li>-->
+                      <!--                            <a href="#" title="" class="showmore underline">more comments+</a>-->
+                      <!--                          </li>-->
+                      <!--                          <li class="post-comment">-->
+                      <!--                            <div class="comet-avatar">-->
+                      <!--                              <img src="images/resources/nearly1.jpg" alt="">-->
+                      <!--                            </div>-->
+                      <!--                            <div class="post-comt-box">-->
+                      <!--                              <form method="post">-->
+                      <!--                                <textarea placeholder="Post your comment"></textarea>-->
+                      <!--                                <div class="add-smiles">-->
+                      <!--                                  <div class="uploadimage">-->
+                      <!--                                    <i class="fa fa-image"></i>-->
+                      <!--                                    <label class="fileContainer">-->
+                      <!--                                      <input type="file">-->
+                      <!--                                    </label>-->
+                      <!--                                  </div>-->
+                      <!--                                  <span class="em em-expressionless" title="add icon"></span>-->
+                      <!--                                  <div class="smiles-bunch">-->
+                      <!--                                    <i class="em em-&#45;&#45;1"></i>-->
+                      <!--                                    <i class="em em-smiley"></i>-->
+                      <!--                                    <i class="em em-anguished"></i>-->
+                      <!--                                    <i class="em em-laughing"></i>-->
+                      <!--                                    <i class="em em-angry"></i>-->
+                      <!--                                    <i class="em em-astonished"></i>-->
+                      <!--                                    <i class="em em-blush"></i>-->
+                      <!--                                    <i class="em em-disappointed"></i>-->
+                      <!--                                    <i class="em em-worried"></i>-->
+                      <!--                                    <i class="em em-kissing_heart"></i>-->
+                      <!--                                    <i class="em em-rage"></i>-->
+                      <!--                                    <i class="em em-stuck_out_tongue"></i>-->
+                      <!--                                  </div>-->
+                      <!--                                </div>-->
+
+                      <!--                                <button type="submit"></button>-->
+                      <!--                              </form>-->
+                      <!--                            </div>-->
+                      <!--                          </li>-->
+                      <!--                        </ul>-->
+                      <!--                      </div>-->
+                      <!--                      end comment input-->
+                    </div>
+
+                  </div>
+                </div><!-- album post -->
+
+                <!-- video post -->
+              </div>
+            </div><!-- centerl meta -->
+            <div class="col-lg-3">
+              <aside class="sidebar static right">
+                <div class="widget">
+                  <h4 class="widget-title">Your page</h4>
+                  <div class="your-page">
+                    <figure>
+                      <a href="#" title=""><img src="images/resources/friend-avatar9.jpg" alt=""></a>
+                    </figure>
+                    <div class="page-meta">
+                      <a href="#" title="" class="underline">My Creative Page</a>
+                      <span><i class="ti-comment"></i><a href="insight.html" title="">Messages <em>9</em></a></span>
+                      <span><i class="ti-bell"></i><a href="insight.html" title="">Notifications <em>2</em></a></span>
+                    </div>
+                    <ul class="page-publishes">
+                      <li>
+                        <span><i class="ti-pencil-alt"></i>Publish</span>
+                      </li>
+                      <li>
+                        <span><i class="ti-camera"></i>Photo</span>
+                      </li>
+                      <li>
+                        <span><i class="ti-video-camera"></i>Live</span>
+                      </li>
+                      <li>
+                        <span><i class="fa fa-user-plus"></i>Invite</span>
+                      </li>
+                    </ul>
+                    <div class="page-likes">
+                      <ul class="nav nav-tabs likes-btn">
+                        <li class="nav-item"><a class="active" href="#link1" data-toggle="tab"
+                                                data-ripple="">likes</a></li>
+                        <li class="nav-item"><a class="" href="#link2" data-toggle="tab" data-ripple="">views</a></li>
                       </ul>
-                      <div class="page-likes">
-                        <ul class="nav nav-tabs likes-btn">
-                          <li class="nav-item"><a class="active" href="#link1" data-toggle="tab" data-ripple="">likes</a></li>
-                          <li class="nav-item"><a class="" href="#link2" data-toggle="tab" data-ripple="">views</a></li>
-                        </ul>
-                        <!-- Tab panes -->
-                        <div class="tab-content">
-                          <div class="tab-pane active fade show " id="link1" >
-                            <span><i class="ti-heart"></i>884</span>
-                            <a href="#" title="weekly-likes">35 new likes this week</a>
-                            <div class="users-thumb-list">
-                              <a href="#" title="Anderw" data-toggle="tooltip">
-                                <img src="images/resources/userlist-1.jpg" alt="">
-                              </a>
-                              <a href="#" title="frank" data-toggle="tooltip">
-                                <img src="images/resources/userlist-2.jpg" alt="">
-                              </a>
-                              <a href="#" title="Sara" data-toggle="tooltip">
-                                <img src="images/resources/userlist-3.jpg" alt="">
-                              </a>
-                              <a href="#" title="Amy" data-toggle="tooltip">
-                                <img src="images/resources/userlist-4.jpg" alt="">
-                              </a>
-                              <a href="#" title="Ema" data-toggle="tooltip">
-                                <img src="images/resources/userlist-5.jpg" alt="">
-                              </a>
-                              <a href="#" title="Sophie" data-toggle="tooltip">
-                                <img src="images/resources/userlist-6.jpg" alt="">
-                              </a>
-                              <a href="#" title="Maria" data-toggle="tooltip">
-                                <img src="images/resources/userlist-7.jpg" alt="">
-                              </a>
-                            </div>
+                      <!-- Tab panes -->
+                      <div class="tab-content">
+                        <div class="tab-pane active fade show " id="link1">
+                          <span><i class="ti-heart"></i>884</span>
+                          <a href="#" title="weekly-likes">35 new likes this week</a>
+                          <div class="users-thumb-list">
+                            <a href="#" title="Anderw" data-toggle="tooltip">
+                              <img src="images/resources/userlist-1.jpg" alt="">
+                            </a>
+                            <a href="#" title="frank" data-toggle="tooltip">
+                              <img src="images/resources/userlist-2.jpg" alt="">
+                            </a>
+                            <a href="#" title="Sara" data-toggle="tooltip">
+                              <img src="images/resources/userlist-3.jpg" alt="">
+                            </a>
+                            <a href="#" title="Amy" data-toggle="tooltip">
+                              <img src="images/resources/userlist-4.jpg" alt="">
+                            </a>
+                            <a href="#" title="Ema" data-toggle="tooltip">
+                              <img src="images/resources/userlist-5.jpg" alt="">
+                            </a>
+                            <a href="#" title="Sophie" data-toggle="tooltip">
+                              <img src="images/resources/userlist-6.jpg" alt="">
+                            </a>
+                            <a href="#" title="Maria" data-toggle="tooltip">
+                              <img src="images/resources/userlist-7.jpg" alt="">
+                            </a>
                           </div>
-                          <div class="tab-pane fade" id="link2" >
-                            <span><i class="fa fa-eye"></i>440</span>
-                            <a href="#" title="weekly-likes">440 new views this week</a>
-                            <div class="users-thumb-list">
-                              <a href="#" title="Anderw" data-toggle="tooltip">
-                                <img src="images/resources/userlist-1.jpg" alt="">
-                              </a>
-                              <a href="#" title="frank" data-toggle="tooltip">
-                                <img src="images/resources/userlist-2.jpg" alt="">
-                              </a>
-                              <a href="#" title="Sara" data-toggle="tooltip">
-                                <img src="images/resources/userlist-3.jpg" alt="">
-                              </a>
-                              <a href="#" title="Amy" data-toggle="tooltip">
-                                <img src="images/resources/userlist-4.jpg" alt="">
-                              </a>
-                              <a href="#" title="Ema" data-toggle="tooltip">
-                                <img src="images/resources/userlist-5.jpg" alt="">
-                              </a>
-                              <a href="#" title="Sophie" data-toggle="tooltip">
-                                <img src="images/resources/userlist-6.jpg" alt="">
-                              </a>
-                              <a href="#" title="Maria" data-toggle="tooltip">
-                                <img src="images/resources/userlist-7.jpg" alt="">
-                              </a>
-                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="link2">
+                          <span><i class="fa fa-eye"></i>440</span>
+                          <a href="#" title="weekly-likes">440 new views this week</a>
+                          <div class="users-thumb-list">
+                            <a href="#" title="Anderw" data-toggle="tooltip">
+                              <img src="images/resources/userlist-1.jpg" alt="">
+                            </a>
+                            <a href="#" title="frank" data-toggle="tooltip">
+                              <img src="images/resources/userlist-2.jpg" alt="">
+                            </a>
+                            <a href="#" title="Sara" data-toggle="tooltip">
+                              <img src="images/resources/userlist-3.jpg" alt="">
+                            </a>
+                            <a href="#" title="Amy" data-toggle="tooltip">
+                              <img src="images/resources/userlist-4.jpg" alt="">
+                            </a>
+                            <a href="#" title="Ema" data-toggle="tooltip">
+                              <img src="images/resources/userlist-5.jpg" alt="">
+                            </a>
+                            <a href="#" title="Sophie" data-toggle="tooltip">
+                              <img src="images/resources/userlist-6.jpg" alt="">
+                            </a>
+                            <a href="#" title="Maria" data-toggle="tooltip">
+                              <img src="images/resources/userlist-7.jpg" alt="">
+                            </a>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div><!-- page like widget -->
-                  <div class="widget">
-                    <h4 class="widget-title">Explor Events <a title="" href="#" class="see-all">See All</a></h4>
-                    <div class="rec-events bg-purple">
-                      <i class="ti-gift"></i>
-                      <h6><a href="#" title="">Ocean Motel good night event in columbia</a></h6>
-                      <img src="images/clock.png" alt="">
-                    </div>
-                    <div class="rec-events bg-blue">
-                      <i class="ti-microphone"></i>
-                      <h6><a href="#" title="">2016 The 3rd International Conference</a></h6>
-                      <img src="images/clock.png" alt="">
-                    </div>
-                  </div><!-- explore events -->
-                  <div class="widget">
-                    <h4 class="widget-title">Profile intro</h4>
-                    <ul class="short-profile">
-                      <li>
-                        <span>about</span>
-                        <p>Hi, i am jhon kates, i am 32 years old and worked as a web developer in microsoft </p>
-                      </li>
-                      <li>
-                        <span>fav tv show</span>
-                        <p>Sacred Games, Spartcus Blood, Games of Theron </p>
-                      </li>
-                      <li>
-                        <span>favourit music</span>
-                        <p>Justin Biber, Shakira, Nati Natasah</p>
-                      </li>
-                    </ul>
-                  </div><!-- profile intro widget -->
-                  <div class="widget stick-widget">
-                    <h4 class="widget-title">Recent Links <a title="" href="#" class="see-all">See All</a></h4>
-                    <ul class="recent-links">
-                      <li>
-                        <figure><img src="images/resources/recentlink-1.jpg" alt=""></figure>
-                        <div class="re-links-meta">
-                          <h6><a href="#" title="">moira's fade reaches much farther than you think.</a></h6>
-                          <span>2 weeks ago </span>
-                        </div>
-                      </li>
-                      <li>
-                        <figure><img src="images/resources/recentlink-2.jpg" alt=""></figure>
-                        <div class="re-links-meta">
-                          <h6><a href="#" title="">daniel asks if we want him to do the voice of doomfist</a></h6>
-                          <span>3 months ago </span>
-                        </div>
-                      </li>
-                      <li>
-                        <figure><img src="images/resources/recentlink-3.jpg" alt=""></figure>
-                        <div class="re-links-meta">
-                          <h6><a href="#" title="">the pitnik overwatch scandals.</a></h6>
-                          <span>1 day before</span>
-                        </div>
-                      </li>
-                    </ul>
-                  </div><!-- recent links -->
-                </aside>
-              </div><!-- sidebar -->
-            </div>
+                  </div>
+                </div><!-- page like widget -->
+                <div class="widget">
+                  <h4 class="widget-title">Explor Events <a title="" href="#" class="see-all">See All</a></h4>
+                  <div class="rec-events bg-purple">
+                    <i class="ti-gift"></i>
+                    <h6><a href="#" title="">Ocean Motel good night event in columbia</a></h6>
+                    <img src="images/clock.png" alt="">
+                  </div>
+                  <div class="rec-events bg-blue">
+                    <i class="ti-microphone"></i>
+                    <h6><a href="#" title="">2016 The 3rd International Conference</a></h6>
+                    <img src="images/clock.png" alt="">
+                  </div>
+                </div><!-- explore events -->
+                <div class="widget">
+                  <h4 class="widget-title">Profile intro</h4>
+                  <ul class="short-profile">
+                    <li>
+                      <span>about</span>
+                      <p>Hi, i am jhon kates, i am 32 years old and worked as a web developer in microsoft </p>
+                    </li>
+                    <li>
+                      <span>fav tv show</span>
+                      <p>Sacred Games, Spartcus Blood, Games of Theron </p>
+                    </li>
+                    <li>
+                      <span>favourit music</span>
+                      <p>Justin Biber, Shakira, Nati Natasah</p>
+                    </li>
+                  </ul>
+                </div><!-- profile intro widget -->
+                <div class="widget stick-widget">
+                  <h4 class="widget-title">Recent Links <a title="" href="#" class="see-all">See All</a></h4>
+                  <ul class="recent-links">
+                    <li>
+                      <figure><img src="images/resources/recentlink-1.jpg" alt=""></figure>
+                      <div class="re-links-meta">
+                        <h6><a href="#" title="">moira's fade reaches much farther than you think.</a></h6>
+                        <span>2 weeks ago </span>
+                      </div>
+                    </li>
+                    <li>
+                      <figure><img src="images/resources/recentlink-2.jpg" alt=""></figure>
+                      <div class="re-links-meta">
+                        <h6><a href="#" title="">daniel asks if we want him to do the voice of doomfist</a></h6>
+                        <span>3 months ago </span>
+                      </div>
+                    </li>
+                    <li>
+                      <figure><img src="images/resources/recentlink-3.jpg" alt=""></figure>
+                      <div class="re-links-meta">
+                        <h6><a href="#" title="">the pitnik overwatch scandals.</a></h6>
+                        <span>1 day before</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div><!-- recent links -->
+              </aside>
+            </div><!-- sidebar -->
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-  </section>
-
+  <a title="Your Cart Items" href="shop-cart.html" class="shopping-cart" data-toggle="tooltip">Cart <i
+    class="fa fa-shopping-bag"></i><span>02</span></a>
 
   <div class="bottombar">
     <div class="container">
@@ -2664,262 +1850,254 @@
       </div>
     </div>
   </div>
-</div>
-<div class="side-panel">
-  <h4 class="panel-title">General Setting</h4>
-  <form method="post">
-    <div class="setting-row">
-      <span>use night mode</span>
-      <input type="checkbox" id="nightmode1"/>
-      <label for="nightmode1" data-off-label="OFF"></label>
-    </div>
-    <div class="setting-row">
-      <span>Notifications</span>
-      <input type="checkbox" id="switch22" />
-      <label for="switch22" data-off-label="OFF"></label>
-    </div>
-    <div class="setting-row">
-      <span>Notification sound</span>
-      <input type="checkbox" id="switch33" />
-      <label for="switch33" data-off-label="OFF"></label>
-    </div>
-    <div class="setting-row">
-      <span>My profile</span>
-      <input type="checkbox" id="switch44" />
-      <label for="switch44" data-off-label="OFF"></label>
-    </div>
-    <div class="setting-row">
-      <span>Show profile</span>
-      <input type="checkbox" id="switch55" />
-      <label for="switch55" data-off-label="OFF"></label>
-    </div>
-  </form>
-  <h4 class="panel-title">Account Setting</h4>
-  <form method="post">
-    <div class="setting-row">
-      <span>Sub users</span>
-      <input type="checkbox" id="switch66" />
-      <label for="switch66" data-off-label="OFF"></label>
-    </div>
-    <div class="setting-row">
-      <span>personal account</span>
-      <input type="checkbox" id="switch77" />
-      <label for="switch77" data-off-label="OFF"></label>
-    </div>
-    <div class="setting-row">
-      <span>Business account</span>
-      <input type="checkbox" id="switch88" />
-      <label for="switch88" data-off-label="OFF"></label>
-    </div>
-    <div class="setting-row">
-      <span>Show me online</span>
-      <input type="checkbox" id="switch99" />
-      <label for="switch99" data-off-label="OFF"></label>
-    </div>
-    <div class="setting-row">
-      <span>Delete history</span>
-      <input type="checkbox" id="switch101" />
-      <label for="switch101"  data-off-label="OFF"></label>
-    </div>
-    <div class="setting-row">
-      <span>Expose author name</span>
-      <input type="checkbox" id="switch111" />
-      <label for="switch111"  data-off-label="OFF"></label>
-    </div>
-  </form>
-</div><!-- side panel -->
-
-<div class="popup-wraper2">
-  <div class="popup post-sharing">
-    <span class="popup-closed"><i class="ti-close"></i></span>
-    <div class="popup-meta">
-      <div class="popup-head">
-        <select data-placeholder="Share to friends..." multiple class="chosen-select multi">
-          <option>Share in your feed</option>
-          <option>Share in friend feed</option>
-          <option>Share in a page</option>
-          <option>Share in a group</option>
-          <option>Share in message</option>
-        </select>
-        <div class="post-status">
-          <span><i class="fa fa-globe"></i></span>
-          <ul>
-            <li><a href="#" title=""><i class="fa fa-globe"></i> Post Globaly</a></li>
-            <li><a href="#" title=""><i class="fa fa-user"></i> Post Private</a></li>
-            <li><a href="#" title=""><i class="fa fa-user-plus"></i> Post Friends</a></li>
-          </ul>
-        </div>
+  <!--</div>-->
+  <div class="side-panel">
+    <h4 class="panel-title">General Setting</h4>
+    <form method="post">
+      <div class="setting-row">
+        <span>use night mode</span>
+        <input type="checkbox" id="nightmode1"/>
+        <label for="nightmode1" data-off-label="OFF"></label>
       </div>
-      <div class="postbox">
-        <div class="post-comt-box">
-          <form method="post">
-            <input type="text" placeholder="Search Friends, Pages, Groups, etc....">
-            <textarea placeholder="Say something about this..."></textarea>
-            <div class="add-smiles">
-              <span title="add icon" class="em em-expressionless"></span>
-              <div class="smiles-bunch">
-                <i class="em em---1"></i>
-                <i class="em em-smiley"></i>
-                <i class="em em-anguished"></i>
-                <i class="em em-laughing"></i>
-                <i class="em em-angry"></i>
-                <i class="em em-astonished"></i>
-                <i class="em em-blush"></i>
-                <i class="em em-disappointed"></i>
-                <i class="em em-worried"></i>
-                <i class="em em-kissing_heart"></i>
-                <i class="em em-rage"></i>
-                <i class="em em-stuck_out_tongue"></i>
-              </div>
-            </div>
+      <div class="setting-row">
+        <span>Notifications</span>
+        <input type="checkbox" id="switch22"/>
+        <label for="switch22" data-off-label="OFF"></label>
+      </div>
+      <div class="setting-row">
+        <span>Notification sound</span>
+        <input type="checkbox" id="switch33"/>
+        <label for="switch33" data-off-label="OFF"></label>
+      </div>
+      <div class="setting-row">
+        <span>My profile</span>
+        <input type="checkbox" id="switch44"/>
+        <label for="switch44" data-off-label="OFF"></label>
+      </div>
+      <div class="setting-row">
+        <span>Show profile</span>
+        <input type="checkbox" id="switch55"/>
+        <label for="switch55" data-off-label="OFF"></label>
+      </div>
+    </form>
+    <h4 class="panel-title">Account Setting</h4>
+    <form method="post">
+      <div class="setting-row">
+        <span>Sub users</span>
+        <input type="checkbox" id="switch66"/>
+        <label for="switch66" data-off-label="OFF"></label>
+      </div>
+      <div class="setting-row">
+        <span>personal account</span>
+        <input type="checkbox" id="switch77"/>
+        <label for="switch77" data-off-label="OFF"></label>
+      </div>
+      <div class="setting-row">
+        <span>Business account</span>
+        <input type="checkbox" id="switch88"/>
+        <label for="switch88" data-off-label="OFF"></label>
+      </div>
+      <div class="setting-row">
+        <span>Show me online</span>
+        <input type="checkbox" id="switch99"/>
+        <label for="switch99" data-off-label="OFF"></label>
+      </div>
+      <div class="setting-row">
+        <span>Delete history</span>
+        <input type="checkbox" id="switch101"/>
+        <label for="switch101" data-off-label="OFF"></label>
+      </div>
+      <div class="setting-row">
+        <span>Expose author name</span>
+        <input type="checkbox" id="switch111"/>
+        <label for="switch111" data-off-label="OFF"></label>
+      </div>
+    </form>
+  </div><!-- side panel -->
 
-            <button type="submit"></button>
-          </form>
-        </div>
-        <figure><img src="images/resources/share-post.jpg" alt=""></figure>
-        <div class="friend-info">
-          <figure>
-            <img alt="" src="images/resources/admin.jpg">
-          </figure>
-          <div class="friend-name">
-            <ins><a title="" href="time-line.html">Jack Carter</a> share <a title="" href="#">link</a></ins>
-            <span>Yesterday with @Jack Piller and @Emily Stone at the concert of # Rock'n'Rolla in Ontario.</span>
+  <div class="popup-wraper2">
+    <div class="popup post-sharing">
+      <span class="popup-closed"><i class="ti-close"></i></span>
+      <div class="popup-meta">
+        <div class="popup-head">
+          <select data-placeholder="Share to friends..." multiple class="chosen-select multi">
+            <option>Share in your feed</option>
+            <option>Share in friend feed</option>
+            <option>Share in a page</option>
+            <option>Share in a group</option>
+            <option>Share in message</option>
+          </select>
+          <div class="post-status">
+            <span><i class="fa fa-globe"></i></span>
+            <ul>
+              <li><a href="#" title=""><i class="fa fa-globe"></i> Post Globaly</a></li>
+              <li><a href="#" title=""><i class="fa fa-user"></i> Post Private</a></li>
+              <li><a href="#" title=""><i class="fa fa-user-plus"></i> Post Friends</a></li>
+            </ul>
           </div>
         </div>
-        <div class="share-to-other">
-          <span>Share to other socials</span>
-          <ul>
-            <li><a class="facebook-color" href="#" title=""><i class="fa fa-facebook-square"></i></a></li>
-            <li><a class="twitter-color" href="#" title=""><i class="fa fa-twitter-square"></i></a></li>
-            <li><a class="dribble-color" href="#" title=""><i class="fa fa-dribbble"></i></a></li>
-            <li><a class="instagram-color" href="#" title=""><i class="fa fa-instagram"></i></a></li>
-            <li><a class="pinterest-color" href="#" title=""><i class="fa fa-pinterest-square"></i></a></li>
-          </ul>
-        </div>
-        <div class="copy-email">
-          <span>Copy & Email</span>
-          <ul>
-            <li><a href="#" title="Copy Post Link"><i class="fa fa-link"></i></a></li>
-            <li><a href="#" title="Email this Post"><i class="fa fa-envelope"></i></a></li>
-          </ul>
-        </div>
-        <div class="we-video-info">
-          <ul>
-            <li>
+        <div class="postbox">
+          <div class="post-comt-box">
+            <form method="post">
+              <input type="text" placeholder="Search Friends, Pages, Groups, etc....">
+              <textarea placeholder="Say something about this..."></textarea>
+              <div class="add-smiles">
+                <span title="add icon" class="em em-expressionless"></span>
+                <div class="smiles-bunch">
+                  <i class="em em---1"></i>
+                  <i class="em em-smiley"></i>
+                  <i class="em em-anguished"></i>
+                  <i class="em em-laughing"></i>
+                  <i class="em em-angry"></i>
+                  <i class="em em-astonished"></i>
+                  <i class="em em-blush"></i>
+                  <i class="em em-disappointed"></i>
+                  <i class="em em-worried"></i>
+                  <i class="em em-kissing_heart"></i>
+                  <i class="em em-rage"></i>
+                  <i class="em em-stuck_out_tongue"></i>
+                </div>
+              </div>
+
+              <button type="submit"></button>
+            </form>
+          </div>
+          <figure><img src="images/resources/share-post.jpg" alt=""></figure>
+          <div class="friend-info">
+            <figure>
+              <img alt="" src="images/resources/admin.jpg">
+            </figure>
+            <div class="friend-name">
+              <ins><a title="" href="time-line.html">Jack Carter</a> share <a title="" href="#">link</a></ins>
+              <span>Yesterday with @Jack Piller and @Emily Stone at the concert of # Rock'n'Rolla in Ontario.</span>
+            </div>
+          </div>
+          <div class="share-to-other">
+            <span>Share to other socials</span>
+            <ul>
+              <li><a class="facebook-color" href="#" title=""><i class="fa fa-facebook-square"></i></a></li>
+              <li><a class="twitter-color" href="#" title=""><i class="fa fa-twitter-square"></i></a></li>
+              <li><a class="dribble-color" href="#" title=""><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="instagram-color" href="#" title=""><i class="fa fa-instagram"></i></a></li>
+              <li><a class="pinterest-color" href="#" title=""><i class="fa fa-pinterest-square"></i></a></li>
+            </ul>
+          </div>
+          <div class="copy-email">
+            <span>Copy & Email</span>
+            <ul>
+              <li><a href="#" title="Copy Post Link"><i class="fa fa-link"></i></a></li>
+              <li><a href="#" title="Email this Post"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+          </div>
+          <div class="we-video-info">
+            <ul>
+              <li>
 								<span title="" data-toggle="tooltip" class="views" data-original-title="views">
 									<i class="fa fa-eye"></i>
 									<ins>1.2k</ins>
 								</span>
-            </li>
-            <li>
+              </li>
+              <li>
 								<span title="" data-toggle="tooltip" class="views" data-original-title="views">
 									<i class="fa fa-share-alt"></i>
 									<ins>20k</ins>
 								</span>
-            </li>
-          </ul>
-          <button class="main-btn color" data-ripple="">Submit</button>
-          <button class="main-btn cancel" data-ripple="">Cancel</button>
+              </li>
+            </ul>
+            <button class="main-btn color" data-ripple="">Submit</button>
+            <button class="main-btn cancel" data-ripple="">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- share popup -->
+
+  <div class="popup-wraper3">
+    <div class="popup">
+      <span class="popup-closed"><i class="ti-close"></i></span>
+      <div class="popup-meta">
+        <div class="popup-head">
+          <h5>Report Post</h5>
+        </div>
+        <div class="Rpt-meta">
+          <span>We're sorry something's wrong. How can we help?</span>
+          <form method="post" class="c-form">
+            <div class="form-radio">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="radio" checked="checked"><i class="check-box"></i>It's spam or abuse
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="radio"><i class="check-box"></i>It breaks r/technology's rules
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="radio"><i class="check-box"></i>Not Related
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="radio"><i class="check-box"></i>Other issues
+                </label>
+              </div>
+            </div>
+            <div>
+              <label>Write about Report</label>
+              <textarea placeholder="write someting about Post" rows="2"></textarea>
+            </div>
+            <div>
+              <button data-ripple="" type="submit" class="main-btn">Submit</button>
+              <a href="#" data-ripple="" class="main-btn3 cancel">Close</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div><!-- report popup -->
+
+  <div class="popup-wraper1">
+    <div class="popup direct-mesg">
+      <span class="popup-closed"><i class="ti-close"></i></span>
+      <div class="popup-meta">
+        <div class="popup-head">
+          <h5>Send Message</h5>
+        </div>
+        <div class="send-message">
+          <form method="post" class="c-form">
+            <input type="text" placeholder="Sophia">
+            <textarea placeholder="Write Message"></textarea>
+            <button type="submit" class="main-btn">Send</button>
+          </form>
+          <div class="add-smiles">
+            <div class="uploadimage">
+              <i class="fa fa-image"></i>
+              <label class="fileContainer">
+                <input type="file">
+              </label>
+            </div>
+            <span title="add icon" class="em em-expressionless"></span>
+            <div class="smiles-bunch">
+              <i class="em em---1"></i>
+              <i class="em em-smiley"></i>
+              <i class="em em-anguished"></i>
+              <i class="em em-laughing"></i>
+              <i class="em em-angry"></i>
+              <i class="em em-astonished"></i>
+              <i class="em em-blush"></i>
+              <i class="em em-disappointed"></i>
+              <i class="em em-worried"></i>
+              <i class="em em-kissing_heart"></i>
+              <i class="em em-rage"></i>
+              <i class="em em-stuck_out_tongue"></i>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
   </div>
-</div><!-- share popup -->
-
-<div class="popup-wraper3">
-  <div class="popup">
-    <span class="popup-closed"><i class="ti-close"></i></span>
-    <div class="popup-meta">
-      <div class="popup-head">
-        <h5>Report Post</h5>
-      </div>
-      <div class="Rpt-meta">
-        <span>We're sorry something's wrong. How can we help?</span>
-        <form method="post" class="c-form">
-          <div class="form-radio">
-            <div class="radio">
-              <label>
-                <input type="radio" name="radio" checked="checked"><i class="check-box"></i>It's spam or abuse
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="radio"><i class="check-box"></i>It breaks r/technology's rules
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="radio"><i class="check-box"></i>Not Related
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="radio"><i class="check-box"></i>Other issues
-              </label>
-            </div>
-          </div>
-          <div>
-            <label>Write about Report</label>
-            <textarea placeholder="write someting about Post" rows="2"></textarea>
-          </div>
-          <div>
-            <button data-ripple="" type="submit" class="main-btn">Submit</button>
-            <a href="#" data-ripple="" class="main-btn3 cancel">Close</a>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div><!-- report popup -->
-
-<div class="popup-wraper1">
-  <div class="popup direct-mesg">
-    <span class="popup-closed"><i class="ti-close"></i></span>
-    <div class="popup-meta">
-      <div class="popup-head">
-        <h5>Send Message</h5>
-      </div>
-      <div class="send-message">
-        <form method="post" class="c-form">
-          <input type="text" placeholder="Sophia">
-          <textarea placeholder="Write Message"></textarea>
-          <button type="submit" class="main-btn">Send</button>
-        </form>
-        <div class="add-smiles">
-          <div class="uploadimage">
-            <i class="fa fa-image"></i>
-            <label class="fileContainer">
-              <input type="file">
-            </label>
-          </div>
-          <span title="add icon" class="em em-expressionless"></span>
-          <div class="smiles-bunch">
-            <i class="em em---1"></i>
-            <i class="em em-smiley"></i>
-            <i class="em em-anguished"></i>
-            <i class="em em-laughing"></i>
-            <i class="em em-angry"></i>
-            <i class="em em-astonished"></i>
-            <i class="em em-blush"></i>
-            <i class="em em-disappointed"></i>
-            <i class="em em-worried"></i>
-            <i class="em em-kissing_heart"></i>
-            <i class="em em-rage"></i>
-            <i class="em em-stuck_out_tongue"></i>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</div><!-- send message popup -->
-
-
-
-
-
-
-
-
-
+  <!-- send message popup -->
 
