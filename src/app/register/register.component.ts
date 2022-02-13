@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder, FormGroup} from "@angular/forms";
+import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
 import {UserService} from "../services/user.service";
 import {Router} from "@angular/router";
 
@@ -18,10 +18,10 @@ export class RegisterComponent implements OnInit {
 
   ngOnInit(): void {
     this.formAddUser = this.fb.group({
-      fullname: [''],
-      email: [''],
-      password: [''],
-      phone: ['']
+
+      email: new FormControl('', [Validators.required, Validators.email]),
+      phone: new FormControl('', [Validators.required]),
+      password: new FormControl('', [Validators.required])
     })
   }
 
@@ -32,6 +32,15 @@ export class RegisterComponent implements OnInit {
         this.router.navigate([''])
       }
     })
+  }
+  get email() {
+    return this.formAddUser?.get('email')
+  }
+  get password() {
+    return this.formAddUser?.get('password')
+  }
+  get phone() {
+    return this.formAddUser?.get('phone')
   }
 
 

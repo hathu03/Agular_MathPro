@@ -21,7 +21,7 @@ export class UserUpdateComponent implements OnInit {
 
   ngOnInit(): void {
     this.formUpdateUser = this.fb.group({
-      emall: [''],
+      email: [''],
       password: [''],
       fullname: [''],
       image: [''],
