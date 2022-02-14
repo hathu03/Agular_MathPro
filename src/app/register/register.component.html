@@ -92,7 +92,7 @@
                     Không được để trống Password!
                   </p>
                 </div>
-                <input type="text" name="repassword" placeholder="+1234-567-987">
+                <input type="text" formControlName="phone" placeholder="+1234-567-987">
                 <div *ngIf="phone?.invalid && phone?.touched">
                   <p style="color: white" *ngIf="phone?.errors?.['required']">
                     Không được để trống Phone!
