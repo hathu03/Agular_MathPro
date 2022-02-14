@@ -31,8 +31,6 @@ export class NewfeedComponent implements OnInit {
       status_id: [""],
       user_id: [this.userLogin.id],
     })
-
-
   }
 
   logout(){
@@ -60,6 +58,16 @@ export class NewfeedComponent implements OnInit {
     this.statusService.getAll().subscribe(res => {
       this.statuses = res
     })
+  }
+
+  delete(id: number) {
+    if (confirm('Are You Sure???')) {
+      this.postServive.deletePost(id).subscribe(res=>{
+        if (res.success == true) {
+          this.getPosts();
+        }
+      })
+    }
   }
 
 }
