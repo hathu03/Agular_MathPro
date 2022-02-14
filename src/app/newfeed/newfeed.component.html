@@ -237,7 +237,7 @@
         <span>Newsfeed</span>
       </div>
       <ul class="setting-area">
-        <li><a href="newsfeed.html" title="Home" data-ripple=""><i class="fa fa-home"></i></a></li>
+        <li><a href="" title="Home" data-ripple=""><i class="fa fa-home"></i></a></li>
         <li>
           <a href="#" title="Friend Requests" data-ripple="">
             <i class="fa fa-user"></i><em class="bg-red">5</em>
@@ -1463,9 +1463,6 @@
                         <input type="file">
                       </label>
                     </li>
-                    <li class="preview-btn">
-                      <button class="post-btn-preview" type="submit" data-ripple="">Preview</button>
-                    </li>
                   </ul>
 
                 </div>
@@ -1500,7 +1497,7 @@
                           <div class="more-post-optns"><i class="ti-more-alt"></i>
                             <ul>
                               <li><i class="fa fa-pencil-square-o"></i>Edit Post</li>
-                              <li><i class="fa fa-trash-o"></i>Delete Post</li>
+                              <li><a (click)="delete(post.id)" ><i class="fa fa-trash-o" ></i>Delete Post</a></li>
                               <li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>
                               <li><i class="fa fa-address-card-o"></i>Boost This Post</li>
                               <li><i class="fa fa-clock-o"></i>Schedule Post</li>
@@ -1517,11 +1514,11 @@
                         <p>
                           {{post.content}}
                         </p>
-                        <figure>
+                        <figure style="width: 900px;">
                           <div class="img-bunch">
                             <div class="row">
                               <div class="col-lg-6 col-md-6 col-sm-6">
-                                <figure style="width: 400px;height: 300px">
+                                <figure >
                                   <img src="{{post.image}}" alt="">
                                 </figure>
                                 <figure>
@@ -1788,6 +1785,7 @@
                       <p>Hi, i am jhon kates, i am 32 years old and worked as a web developer in microsoft </p>
                     </li>
                     <li>
+
                       <span>fav tv show</span>
                       <p>Sacred Games, Spartcus Blood, Games of Theron </p>
                     </li>

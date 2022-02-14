@@ -18,4 +18,8 @@ export class PostService {
   create(data: any): Observable<any>{
     return this.http.post(environment.api + "/posts", data, {headers: this.authService.setHeader()})
   }
+
+  deletePost(id:number):Observable<any>{
+    return this.http.delete(environment.api+'/posts/'+id)
+  }
 }

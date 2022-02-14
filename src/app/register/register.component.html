@@ -92,13 +92,12 @@
                     Không được để trống Password!
                   </p>
                 </div>
-                <input type="text" formControlName="phone" placeholder="+1234-567-987">
+                <input type="text" name="repassword" placeholder="+1234-567-987">
                 <div *ngIf="phone?.invalid && phone?.touched">
                   <p style="color: white" *ngIf="phone?.errors?.['required']">
                     Không được để trống Phone!
                   </p>
                 </div>
-                <input type="checkbox"><label>Send code to Mobile</label>
                 <button type="submit" data-ripple="" [disabled]="formAddUser.invalid">Register</button>
                 <a class="forgot underline" href="#" title="">forgot password?</a>
               </form>
