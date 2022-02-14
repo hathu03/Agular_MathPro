@@ -15,15 +15,15 @@ export class UserService {
   }
 
   createUser(data: any):Observable<any>{
-    return this.http.post(this.api_url+'/create',data)
+    return this.http.post(this.api_url+'/',data)
   }
 
   deleteUser(id:number):Observable<any>{
-    return this.http.delete(this.api_url+'/delete/'+id)
+    return this.http.delete(this.api_url+'/'+id)
   }
 
   getUser(id:number):Observable<any>{
-    return this.http.get(this.api_url+'/detail/'+id)
+    return this.http.get(this.api_url+'/'+id)
   }
 
   update(data: any, id: number | undefined):Observable<any>{

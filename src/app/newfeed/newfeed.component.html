@@ -735,7 +735,7 @@
         </li>
       </ul>
       <div class="user-img">
-        <h5>Jack Carter</h5>
+        <h5>{{userLogin.fullname}}</h5>
         <img src="images/resources/admin.jpg" alt="">
         <span class="status f-online"></span>
         <div class="user-setting">
@@ -747,7 +747,7 @@
           </ul>
           <span class="seting-title">User setting <a href="#" title="">see all</a></span>
           <ul class="log-out">
-            <li><a href="about.html" title=""><i class="ti-user"></i> view profile</a></li>
+            <li><a routerLink="../profile" title=""><i class="ti-user"></i> view profile</a></li>
             <li><a href="setting.html" title=""><i class="ti-pencil-alt"></i>edit profile</a></li>
             <li><a href="#" title=""><i class="ti-target"></i>activity log</a></li>
             <li><a href="setting.html" title=""><i class="ti-settings"></i>account setting</a></li>
@@ -846,7 +846,7 @@
             <li><a href="manage-page.html" title="">Manage Page</a></li>
             <li><a href="weather-forecast.html" title="">weather-forecast</a></li>
             <li><a href="statistics.html" title="">Statics/Analytics</a></li>
-            <li><a href="shop-cart.html" title="">Shop Cart</a></li>
+
           </ul>
         </li>
         <li><a class="" href="#" title=""><i class="fa fa-gears"></i> Account Setting</a>
@@ -1175,7 +1175,7 @@
             <li><a href="manage-page.html" title="">Manage Page</a></li>
             <li><a href="weather-forecast.html" title="">weather-forecast</a></li>
             <li><a href="statistics.html" title="">Statics/Analytics</a></li>
-            <li><a href="shop-cart.html" title="">Shop Cart</a></li>
+
           </ul>
         </li>
         <li class="menu-item-has-children"><a class="" href="#" title=""><i class="fa fa-gears"></i>Account Setting</a>
@@ -1510,7 +1510,7 @@
                           </div>
                         </div>
 
-                        <ins><a href="time-line.html" title="">{{post.user.fullname}}</a></ins>
+                        <ins><a href="http://localhost:4200/users/{{post.user.id}}/detail" title="">{{post.user.fullname}}</a></ins>
                         <!--                        <span><i class="fa fa-globe"></i> {{post.status}}</span>-->
                       </div>
                       <div class="post-meta">
@@ -1521,11 +1521,8 @@
                           <div class="img-bunch">
                             <div class="row">
                               <div class="col-lg-6 col-md-6 col-sm-6">
-                                <figure>
-                                  <a class="strip" href="images/resources/album1.jpg" title=""
-                                     data-strip-group="mygroup" data-strip-group-options="loop: false">
-                                    <img src="{{post.image}}" alt="">
-                                  </a>
+                                <figure style="width: 400px;height: 300px">
+                                  <img src="{{post.image}}" alt="">
                                 </figure>
                                 <figure>
                                   <a class="strip" href="images/resources/album2.jpg" title=""
@@ -1552,9 +1549,6 @@
                                      data-strip-group="mygroup" data-strip-group-options="loop: false">
                                     <img src="images/resources/album4.jpg" alt="">
                                   </a>
-                                  <div class="more-photos">
-                                    <span>+15</span>
-                                  </div>
                                 </figure>
                               </div>
                             </div>
@@ -1837,8 +1831,7 @@
     </div>
   </div>
 
-  <a title="Your Cart Items" href="shop-cart.html" class="shopping-cart" data-toggle="tooltip">Cart <i
-    class="fa fa-shopping-bag"></i><span>02</span></a>
+
 
   <div class="bottombar">
     <div class="container">

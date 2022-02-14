@@ -1314,20 +1314,17 @@
                     <span class="create-post">Personal Info</span>
                     <div class="personal-head">
                       <span class="f-title"><i class="fa fa-user"></i> About Me:</span>
+                      <img src="{{userLogin.image}}" alt="">
                       <p>
-                        Hi, I’m John Carter, I’m 36 and I work as a Digital Designer for the “dewwater” Agency in Ontario, Canada
+                        Hi, I’m {{userLogin.fullname}}, I work as a Digital Designer in Hanoi, Viet Nam
                       </p>
                       <span class="f-title"><i class="fa fa-birthday-cake"></i> Birthday:</span>
                       <p>
-                        December 17, 1985
+                        {{userLogin.birthday}}
                       </p>
                       <span class="f-title"><i class="fa fa-phone"></i> Phone Number:</span>
                       <p>
-                        +1-989-232435234
-                      </p>
-                      <span class="f-title"><i class="fa fa-medkit"></i> Blood group:</span>
-                      <p>
-                        B+
+                        {{userLogin.phone}}
                       </p>
                       <span class="f-title"><i class="fa fa-male"></i> Gender:</span>
                       <p>
@@ -1335,7 +1332,7 @@
                       </p>
                       <span class="f-title"><i class="fa fa-globe"></i> Country:</span>
                       <p>
-                        San Francisco, California, USA
+                        Ha Noi, Viet Nam
                       </p>
                       <span class="f-title"><i class="fa fa-briefcase"></i> Occupation:</span>
                       <p>
@@ -1363,7 +1360,7 @@
                       <div class="gen-metabox">
                         <span><i class="fa fa-puzzle-piece"></i> Hobbies</span>
                         <p>
-                          I like to ride the bicycle, swimming, and working out. I also like reading design magazines, and searching on internet, and also binge watching a good hollywood Movies while it’s raining outside.
+                         {{userLogin.hobby}}
                         </p>
                       </div>
                       <div class="gen-metabox">
