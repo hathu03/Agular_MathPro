@@ -20,6 +20,6 @@ export class AuthService {
   }
 
   logout(): Observable<any>{
-    return this.http.post(environment.api + "auth/logout",null,{headers: this.setHeader()});
+    return this.http.post(environment.api + "/auth/logout",null,{headers: this.setHeader()});
   }
 }

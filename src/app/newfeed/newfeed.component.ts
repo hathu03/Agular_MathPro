@@ -51,15 +51,14 @@ export class NewfeedComponent implements OnInit {
   create(){
     let data = this.createForm?.value
     this.postServive.create(data).subscribe(res => {
-      console.log(res)
       this.posts.push(res)
-      this.router.navigate(["newfeed"])
+      // this.router.navigate(["newfeed"])
+      location.reload();
     })
   }
   getAllStatus() {
     this.statusService.getAll().subscribe(res => {
       this.statuses = res
-      console.log(res)
     })
   }
 

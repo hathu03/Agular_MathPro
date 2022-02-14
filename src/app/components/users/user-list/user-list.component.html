@@ -17,7 +17,7 @@
       <tr *ngFor="let user of users; let i = index">
         <td>{{i + 1}}</td>
         <td>{{user.fullname}}</td>
-        <td>{{user.image}}</td>
+        <td><img src="{{user.image}}" ></td>
         <td>{{user.email}}</td>
         <td>{{user.address}}</td>
         <td>{{user.phone}}</td>
@@ -31,4 +31,6 @@
     </table>
   </div>
 </div>
+
+
 
