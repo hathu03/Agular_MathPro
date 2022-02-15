@@ -14,7 +14,7 @@
         <td>{{ i+1 }}</td>
         <td>{{post.user.fullname}}</td>
         <td>{{post.content}}</td>
-        <td>{{post.image}}</td>
+        <td><img src="{{post.image}}"></td>
         <td>{{post.status_id}}</td>
         <td><button class="btn btn-warning" routerLink="../posts/{{post.id}}/update">Update</button></td>
         <td><button class="btn btn-info" routerLink="../posts/{{post.id}}/detail">Detail</button></td>

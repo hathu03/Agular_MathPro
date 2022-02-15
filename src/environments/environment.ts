@@ -4,7 +4,17 @@
 
 export const environment = {
   production: false,
-  api: "http://127.0.0.1:8000/api"
+  api: "http://127.0.0.1:8000/api",
+  firebaseConfig : {
+    apiKey: "AIzaSyAsQOtEBgalTCf5V4Jok3dr9Gv78Wczi5M",
+    authDomain: "tiepmath.firebaseapp.com",
+    databaseURL: "https://tiepmath-default-rtdb.firebaseio.com/",
+    projectId: "tiepmath",
+    storageBucket: "tiepmath.appspot.com",
+    messagingSenderId: "572197319327",
+    appId: "1:572197319327:web:964b866f05ba2e95fc68aa",
+    measurementId: "G-8C45HQ2LNX"
+  }
 };
 
 /*

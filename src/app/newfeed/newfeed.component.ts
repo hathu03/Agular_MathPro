@@ -35,10 +35,8 @@ export class NewfeedComponent implements OnInit {
 
   logout(){
     this.authService.logout().subscribe(res=>{
-      if(res.message){
         localStorage.clear()
         this.router.navigate([""])
-      }
     })
   }
   getPosts() {

@@ -28,6 +28,7 @@ export class UserListComponent implements OnInit {
       this.userService.deleteUser(id).subscribe(res=>{
         if (res.success == true) {
           this.getUsers();
+          location.reload();
         }
       })
     }
