@@ -158,7 +158,7 @@
             </div>
             <div class="setting-row">
               <span>Notification sound</span>
-              <input type="checkbox" id="switch3"/>
+              <input type="checkbox" id="switch3"/>Friend's (320)
               <label for="switch3" data-off-label="OFF"></label>
             </div>
             <div class="setting-row">
@@ -1190,7 +1190,7 @@
   </div><!-- left sidebar menu -->
 
   <section>
-    <div class="gap2 gray-bg">
+    <div class="gap2 gray-bg" style="margin-top: 300px">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -1236,7 +1236,7 @@
                     <div class="col-lg-2 col-md-3">
                       <div class="profile-author">
                         <div class="profile-author-thumb">
-                          <img alt="author" src="../../../../assets/pitnik-MXH/images/resources/author.jpg">
+                          <img style="width: 155px; height: 155px" src="{{user.image}}">
                           <div class="edit-dp">
                             <label class="fileContainer">
                               <i class="fa fa-camera"></i>
@@ -1295,7 +1295,10 @@
                             <span class="create-post">Personal Info</span>
                             <div class="personal-head">
                               <span class="f-title"><i class="fa fa-user"></i> About Me:</span>
-                              <img src="{{user.image}}" alt="">
+                              <div style="width: 308px;height: 231px">
+                                <img src="{{user.image}}" alt="">
+                              </div>
+
                               <p>
                                 Hi, I’m {{user.fullname}}, I work as a Digital Designer in Hanoi, Viet Nam
                               </p>

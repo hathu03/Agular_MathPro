@@ -11,6 +11,7 @@ import {ReactiveFormsModule} from "@angular/forms";
 import {NewfeedComponent} from './newfeed/newfeed.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ProfileComponent } from './profile/profile.component';
+import {ToastrModule} from "ngx-toastr";
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { ProfileComponent } from './profile/profile.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
