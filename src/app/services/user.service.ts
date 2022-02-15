@@ -27,7 +27,11 @@ export class UserService {
   }
 
   update(data: any, id: number | undefined):Observable<any>{
-    return this.http.post(this.api_url+'/update/'+id,data)
+    return this.http.put(this.api_url+ '/' +id ,data)
+  }
+
+  getPostOfUser(id:number):Observable<any>{
+    return this.http.get(this.api_url+'/'+id+'/with')
   }
 
   getPostOfUser(id:number):Observable<any>{

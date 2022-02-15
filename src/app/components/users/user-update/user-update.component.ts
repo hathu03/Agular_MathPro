@@ -34,26 +34,37 @@ export class UserUpdateComponent implements OnInit {
     // @ts-ignore
     this.id = +this.router.snapshot.paramMap.get('id');
     this.userService.getUser(this.id).subscribe(res=>{
-      if (res.success == true){
-        this.formUpdateUser?.patchValue({
-          email: res.data.email,
-          password: res.data.password,
-          fullname: res.data.fullname,
-          image: res.data.image,
-          address: res.data.address,
-          phone: res.data.phone,
-          hobby: res.data.hobby,
-          birthday: res.data.birthday,
-          role: res.data.role,
-        })
-      }
+      console.log(res)
+      // if (res.success == true){
+      //   this.formUpdateUser?.patchValue({
+      //     email: res.email,
+      //     password: res.data.password,
+      //     fullname: res.data.fullname,
+      //     image: res.data.image,
+      //     address: res.data.address,
+      //     phone: res.data.phone,
+      //     hobby: res.data.hobby,
+      //     birthday: res.data.birthday,
+      //     role: res.data.role,
+      //   })
+      this.formUpdateUser = this.fb.group({
+        email: [res.email],
+        password: [res.password],
+        fullname: [res.fullname],
+        image: [res.image],
+        address: [res.address],
+        phone: [res.phone],
+        hobby: [res.hobby],
+        birthday: [res.birthday],
+        role: [res.role],
+      });
+      // }
     })
   }
-  update(id: any){
-    let user = this.formUpdateUser.value;
-    this.userService.update(id, user).subscribe(()=>{
+  submit(){
+    let data = this.formUpdateUser?.value;
+    this.userService.update(data, this.id).subscribe(res=>{
       this.route.navigate(['users'])
     })
   }
-
 }
