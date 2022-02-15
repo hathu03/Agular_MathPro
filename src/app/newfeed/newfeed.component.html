@@ -1,3 +1,4 @@
+
 <!--<h2>Trang Chu</h2>-->
 <!--Xin chao: {{userLogin.fullname}}<br>-->
 <!--<button (click)="logout()">Logout</button>-->
@@ -1195,7 +1196,6 @@
       </ul>
     </div>
   </div><!-- left sidebar menu -->
-
   <div class="gap2 gray-bg">
     <div class="container">
       <div class="row">
@@ -1265,6 +1265,47 @@
 
                   </div><!-- Weather Widget -->
                 </div><!-- weather widget-->
+                <div class="widget">
+                  <h4 class="widget-title">Twitter feed</h4>
+                  <ul class="twiter-feed">
+                    <li>
+                      <i class="fa fa-twitter"></i>
+                      <span>
+													<i>jhon william</i>
+													@jhonwilliam
+												</span>
+                      <p>tomorrow with the company we were working and 5 child run away from the working place. <a
+                        href="#" title="">#daydream5k</a></p>
+                      <em>2 hours ago</em>
+                    </li>
+                    <li>
+                      <i class="fa fa-twitter"></i>
+                      <span>
+													<i>Kelly watson</i>
+													@kelly
+												</span>
+                      <p>tomorrow with the company we were working and 5 child run away from the working place. <a
+                        href="#" title="">#daydream5k</a></p>
+                      <em>2 hours ago</em>
+                    </li>
+                    <li>
+                      <i class="fa fa-twitter"></i>
+                      <span>
+													<i>Jony bravo</i>
+													@jonibravo
+												</span>
+                      <p>tomorrow with the company we were working and 5 child run away from the working place. <a
+                        href="#" title="">#daydream5k</a></p>
+                      <em>2 hours ago</em>
+                    </li>
+                  </ul>
+                </div><!-- twitter feed-->
+                <div class="advertisment-box">
+                  <h4 class="">advertisment</h4>
+                  <figure>
+                    <a href="#" title="Advertisment"><img src="images/resources/ad-widget.gif" alt=""></a>
+                  </figure>
+                </div><!-- advertisment box -->
                 <div class="widget">
                   <h4 class="widget-title">Shortcuts</h4>
                   <ul class="naves">
@@ -1359,21 +1400,30 @@
             <div class="col-lg-6">
               <div class="central-meta postbox1">
                 <span class="create-post`1">Create post</span>
-                <form *ngIf="createForm" [formGroup]="createForm" (ngSubmit)="create()">
-                  <input *ngFor="let status of statuses; index as i" formControlName="status_id" type="checkbox" name="{{status.name}}" value="{{status.id}}">
-
-
+                <form  [formGroup]="createForm" (ngSubmit)="create()">
+<!--                  <div *ngFor="let status of statuses" >-->
+<!--                    <input type="radio" value="{{status.id}}" formControlName="status_id" > {{status.name}}-->
+<!--                  </div>-->
                   <!--                  <figure>-->
                   <!--                    <img src="images/resources/admin.jpg" alt="">-->
                   <!--                  </figure>-->
+                  <div *ngFor="let status of statuses" class="form-check form-check-inline">
+                    <input type="radio" value="{{status.id}}" formControlName="status_id" > {{status.name}}
+                    <label class="form-check-label"></label>
+                  </div>
+<!--                  <div class="form-check form-check-inline">-->
+<!--                    <input value="{{status.id}}" formControlName="status_id" > {{status.name}} class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">-->
+<!--                    <label class="form-check-label" for="inlineRadio2">2</label>-->
+<!--                  </div>-->
 
 
                   <textarea formControlName="content" rows="2"
                             placeholder="Share some what you are thinking?"></textarea>
-                  <input type="text" formControlName="image">
+                  <input placeholder="Link image" style="border-color: lightgrey" type="text" formControlName="image">
 
                   <button class="post-btn" type="submit" >Post</button>
                 </form>
+                <br>
 
                 <div class="attachments">
                   <ul>
@@ -1735,6 +1785,32 @@
                     </li>
                   </ul>
                 </div><!-- profile intro widget -->
+                <div class="widget stick-widget">
+                  <h4 class="widget-title">Recent Links <a title="" href="#" class="see-all">See All</a></h4>
+                  <ul class="recent-links">
+                    <li>
+                      <figure><img src="images/resources/recentlink-1.jpg" alt=""></figure>
+                      <div class="re-links-meta">
+                        <h6><a href="#" title="">moira's fade reaches much farther than you think.</a></h6>
+                        <span>2 weeks ago </span>
+                      </div>
+                    </li>
+                    <li>
+                      <figure><img src="images/resources/recentlink-2.jpg" alt=""></figure>
+                      <div class="re-links-meta">
+                        <h6><a href="#" title="">daniel asks if we want him to do the voice of doomfist</a></h6>
+                        <span>3 months ago </span>
+                      </div>
+                    </li>
+                    <li>
+                      <figure><img src="images/resources/recentlink-3.jpg" alt=""></figure>
+                      <div class="re-links-meta">
+                        <h6><a href="#" title="">the pitnik overwatch scandals.</a></h6>
+                        <span>1 day before</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div><!-- recent links -->
               </aside>
             </div><!-- sidebar -->
           </div>
@@ -1742,6 +1818,9 @@
       </div>
     </div>
   </div>
+
+
+
   <div class="bottombar">
     <div class="container">
       <div class="row">
@@ -2003,3 +2082,4 @@
   </div>
   <!-- send message popup -->
 
+</div>

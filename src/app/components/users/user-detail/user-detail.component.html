@@ -1349,19 +1349,18 @@
                       <div class="central-meta">
                         <span class="create-post">Post<a href="#" title="">See All</a></span>
                         <div class="row">
-                          <div class="col-lg-6">
+                          <div class="col-lg-6" *ngFor="let post of posts;index as i">
                             <div class="gen-metabox">
                               <span><i class="fa fa-puzzle-piece"></i> Content</span>
                               <p>
-                                Ngày mới nắng ấm heo mê ly đang oai nghiêm nhìn
+                                {{post.content}}
                               </p>
                             </div>
                             <div class="gen-metabox">
                               <span><i class="fa fa-plus"></i> Image</span>
-                              <img src="https://media-cdn.laodong.vn/storage/newsportal/2019/10/11/759541/Dog.jpeg?w=414&h=276&crop=auto&scale=both" alt="">
+                              <img src="{{post.image}}" alt="">
                             </div>
                           </div>
-
                         </div>
                       </div>
 

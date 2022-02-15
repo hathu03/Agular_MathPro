@@ -10,6 +10,7 @@ import {ActivatedRoute, Router} from "@angular/router";
 export class UserDetailComponent implements OnInit {
   user: any
   id: any
+  posts: any
 
   constructor(private userService: UserService,
               private router: Router,
@@ -19,11 +20,19 @@ export class UserDetailComponent implements OnInit {
     // @ts-ignore
     this.id = +this.route.snapshot.paramMap.get('id');
     this.getById(this.id);
+    this.getPosts(this.id);
   }
 
   private getById(id: number) {
     this.userService.getUser(id).subscribe(res=>{
         this.user = res
+      console.log(res)
+    })
+  }
+
+  private getPosts(id: number){
+    this.userService.getPostOfUser(id).subscribe(res=>{
+      this.posts = res
     })
   }
 }
