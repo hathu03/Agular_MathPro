@@ -26,10 +26,7 @@ export class UserListComponent implements OnInit {
   delete(id: number) {
     if (confirm('Are You Sure???')) {
       this.userService.deleteUser(id).subscribe(res=>{
-        if (res.success == true) {
           this.getUsers();
-          location.reload();
-        }
       })
     }
   }

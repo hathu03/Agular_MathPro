@@ -1,6 +1,5 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-
 import {AppComponent} from './app.component';
 import {RegisterComponent} from './register/register.component';
 import {AppRoutingModule} from './app-routing.module';
@@ -14,7 +13,7 @@ import { ProfileComponent } from './profile/profile.component';
 import {AngularFireStorageModule} from "@angular/fire/compat/storage";
 import {AngularFireModule} from "@angular/fire/compat";
 import {environment} from "../environments/environment";
-
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -32,7 +31,8 @@ import {environment} from "../environments/environment";
     HttpClientModule,
     ReactiveFormsModule,
     AngularFireStorageModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig, "cloud")
+    AngularFireModule.initializeApp(environment.firebaseConfig, "cloud"),
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
