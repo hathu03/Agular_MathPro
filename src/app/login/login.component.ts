@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
 import {AuthService} from "../services/auth.service";
 import {Router} from "@angular/router";
+import {ToastrService} from "ngx-toastr";
 
 @Component({
   selector: 'app-login',
@@ -15,7 +16,8 @@ export class LoginComponent implements OnInit {
 
   constructor(private fb: FormBuilder,
               private authService: AuthService,
-              private router: Router) { }
+              private router: Router,
+              private toastr: ToastrService) { }
 
   ngOnInit(): void {
     this.formLogin = this.fb.group({
@@ -34,7 +36,8 @@ export class LoginComponent implements OnInit {
         localStorage.setItem("token",token)
         localStorage.setItem("user",JSON.stringify(res.user))
         this.router.navigate(['newfeed'])
-
+        this.toastr.success('Ủa Alo', 'Đăng nhập thành công')
+        this.toastr.success('Ủa Alo', 'Đăng nhập thành công')
       }
     })
   }
