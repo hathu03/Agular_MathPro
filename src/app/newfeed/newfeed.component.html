@@ -1402,13 +1402,21 @@
                 <span class="create-post`1">Create post</span>
 
                 <form  [formGroup]="createForm" (ngSubmit)="create()">
-                  <div *ngFor="let status of statuses" >
-                    <input type="radio" value="{{status.id}}" formControlName="status_id" > {{status.name}}
-                  </div>
+<!--                  <div *ngFor="let status of statuses" >-->
+<!--                    <input type="radio" value="{{status.id}}" formControlName="status_id" > {{status.name}}-->
+<!--                  </div>-->
 
                   <!--                  <figure>-->
                   <!--                    <img src="images/resources/admin.jpg" alt="">-->
                   <!--                  </figure>-->
+                  <div *ngFor="let status of statuses" class="form-check form-check-inline">
+                    <input type="radio" value="{{status.id}}" formControlName="status_id" > {{status.name}}
+                    <label class="form-check-label"></label>
+                  </div>
+<!--                  <div class="form-check form-check-inline">-->
+<!--                    <input value="{{status.id}}" formControlName="status_id" > {{status.name}} class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">-->
+<!--                    <label class="form-check-label" for="inlineRadio2">2</label>-->
+<!--                  </div>-->
 
 
                   <textarea formControlName="content" rows="2"
