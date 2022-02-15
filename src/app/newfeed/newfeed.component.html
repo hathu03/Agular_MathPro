@@ -1361,8 +1361,6 @@
               <div class="central-meta postbox1">
                 <span class="create-post`1">Create post</span>
                 <form *ngIf="createForm" [formGroup]="createForm" (ngSubmit)="create()">
-                  <input *ngFor="let status of statuses; index as i" formControlName="status_id" type="checkbox" name="{{status.name}}" value="{{status.id}}">
-
 
                   <!--                  <figure>-->
                   <!--                    <img src="images/resources/admin.jpg" alt="">-->
