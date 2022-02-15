@@ -1,6 +1,6 @@
-<div class="container">
+  <div class="container">
 <h2>Chỉnh sửa thông tin</h2>
-<form *ngIf="formUpdateUser" [formGroup]="formUpdateUser" (ngSubmit)="update(id)">
+<form *ngIf="formUpdateUser" [formGroup]="formUpdateUser" (ngSubmit)="submit()">
   <div class="form-group">
     <label>Email</label>
     <input type="email" name="email" class="form-control" formControlName="email" >

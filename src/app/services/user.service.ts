@@ -27,7 +27,7 @@ export class UserService {
   }
 
   update(data: any, id: number | undefined):Observable<any>{
-    return this.http.post(this.api_url+'/update/'+id,data)
+    return this.http.put(this.api_url+ '/' +id ,data)
   }
 
 }
