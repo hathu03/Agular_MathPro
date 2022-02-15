@@ -19,7 +19,16 @@ export class PostService {
     return this.http.post(environment.api + "/posts", data, {headers: this.authService.setHeader()})
   }
 
-  deletePost(id:number):Observable<any>{
-    return this.http.delete(environment.api+'/posts/'+id)
+  getPost(id:number):Observable<any>{
+    return this.http.get(environment.api+'/posts/'+id)
   }
+
+  update(data: any, id: number | undefined):Observable<any>{
+    return this.http.put(environment.api+ '/posts/' +id ,data)
+  }
+
+  deletePost(id:number):Observable<any>{
+    return this.http.delete(environment.api+'/posts/'+id,{headers: this.authService.setHeader()})
+  }
+
 }
