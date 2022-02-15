@@ -30,4 +30,8 @@ export class UserService {
     return this.http.post(this.api_url+'/update/'+id,data)
   }
 
+  getPostOfUser(id:number):Observable<any>{
+    return this.http.get(this.api_url+'/'+id+'/with')
+  }
+
 }
