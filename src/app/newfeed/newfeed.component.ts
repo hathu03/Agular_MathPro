@@ -4,6 +4,8 @@ import {Router} from "@angular/router";
 import {PostService} from "../services/post.service";
 import {FormBuilder, FormGroup} from "@angular/forms";
 import {StatusService} from "../services/status.service";
+import {finalize, Observable} from "rxjs";
+import {AngularFireStorage} from "@angular/fire/compat/storage";
 
 @Component({
   selector: 'app-newfeed',
@@ -12,14 +14,17 @@ import {StatusService} from "../services/status.service";
 })
 export class NewfeedComponent implements OnInit {
   userLogin: any;
+  loading: any;
   posts: any
   createForm: FormGroup | any
   statuses: any
+  downloadURL: Observable<string> | undefined;
   constructor(private authService: AuthService,
               private router: Router,
               private postServive: PostService,
               private fb: FormBuilder,
-              private statusService: StatusService) { }
+              private statusService: StatusService,
+              private storage: AngularFireStorage) { }
 
   ngOnInit(): void {
     this.userLogin = JSON.parse(<string>localStorage.getItem('user'));
@@ -49,7 +54,7 @@ export class NewfeedComponent implements OnInit {
     this.postServive.create(data).subscribe(res => {
       this.posts.push(res)
       // this.router.navigate(["newfeed"])
-      location.reload();
+      this.getPosts()
     })
   }
   getAllStatus() {
@@ -66,6 +71,34 @@ export class NewfeedComponent implements OnInit {
         }
       })
     }
+  }
+
+  onFileSelected(event: any) {
+    var n = Date.now();
+    const file = event.target.files[0];
+    const filePath = `RoomsImages/${n}`;
+    const fileRef = this.storage.ref(filePath);
+    this.loading = this.storage.upload(filePath,file).percentageChanges()
+    const task = this.storage.upload(`RoomsImages/${n}`, file);
+    task
+      .snapshotChanges()
+      .pipe(
+        finalize(() => {
+          this.downloadURL = fileRef.getDownloadURL();
+          this.downloadURL.subscribe(url => {
+            if (url) {
+              console.log(url)
+              this.createForm.get('image').setValue(url)
+            }
+            console.log(this.fb);
+          });
+        })
+      )
+      .subscribe(url => {
+        if (url) {
+          console.log(url);
+        }
+      });
   }
 
 }
