@@ -1359,7 +1359,9 @@
             <div class="col-lg-6">
               <div class="central-meta postbox1">
                 <span class="create-post`1">Create post</span>
-
+                <div class="progress" *ngIf= "loading | async as progress">
+                  <div class="progress-bar progress-bar-animated" [ngStyle]="{ 'width': progress + '%' }" aria-valuemax="100" aria-valuemin="0"></div>
+                </div>
                 <form  [formGroup]="createForm" (ngSubmit)="create()">
 
                   <!--                  <figure>-->
@@ -1374,10 +1376,8 @@
 <!--                    <label class="form-check-label" for="inlineRadio2">2</label>-->
 <!--                  </div>-->
 
-
                   <textarea formControlName="content" rows="2"
                             placeholder="Share some what you are thinking?"></textarea>
-                  <input placeholder="Link image" style="border-color: lightgrey" type="text" formControlName="image">
 
                   <button class="post-btn" type="submit" >Post</button>
                 </form>
@@ -1399,7 +1399,13 @@
                     <li>
                       <i class="fa fa-image"></i>
                       <label class="fileContainer">
-                        <input type="file">
+                        <input type="file"
+                               id="file"
+                               #userPhoto
+                               (change)="onFileSelected($event)"
+                               name="image"
+                               autocomplete="off"
+                        />
                       </label>
                     </li>
                     <li>
@@ -1501,12 +1507,12 @@
                               </div>
                             </div>
                           </div>
-                          <!--                          <ul class="like-dislike">-->
-                          <!--                            <li><a class="bg-purple" href="#" title="Save to Pin Post"><i-->
-                          <!--                              class="fa fa-thumb-tack"></i></a></li>-->
-                          <!--                            <li><a class="bg-blue" href="#" title="Like Post"><i class="ti-thumb-up"></i></a></li>-->
-                          <!--                            <li><a class="bg-red" href="#" title="dislike Post"><i class="ti-thumb-down"></i></a></li>-->
-                          <!--                          </ul>-->
+<!--                                                    <ul class="like-dislike">-->
+<!--                                                      <li><a class="bg-purple" href="#" title="Save to Pin Post"><i-->
+<!--                                                        class="fa fa-thumb-tack"></i></a></li>-->
+<!--                                                      <li><a class="bg-blue" href="#" title="Like Post"><i class="ti-thumb-up"></i></a></li>-->
+<!--                                                      <li><a class="bg-red" href="#" title="dislike Post"><i class="ti-thumb-down"></i></a></li>-->
+<!--                                                    </ul>-->
                         </figure>
                         <div class="we-video-info">
                           <ul>
