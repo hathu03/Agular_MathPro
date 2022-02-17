@@ -37,7 +37,6 @@ export class LoginComponent implements OnInit {
         localStorage.setItem("user",JSON.stringify(res.user))
         this.router.navigate(['newfeed'])
         this.toastr.success('Ủa Alo', 'Đăng nhập thành công')
-        this.toastr.success('Ủa Alo', 'Đăng nhập thành công')
       }
     })
   }

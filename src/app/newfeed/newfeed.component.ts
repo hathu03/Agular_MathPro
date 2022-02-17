@@ -6,6 +6,7 @@ import {FormBuilder, FormGroup} from "@angular/forms";
 import {StatusService} from "../services/status.service";
 import {finalize, Observable} from "rxjs";
 import {AngularFireStorage} from "@angular/fire/compat/storage";
+import {CommentService} from "../services/comment.service";
 
 @Component({
   selector: 'app-newfeed',
@@ -15,16 +16,20 @@ import {AngularFireStorage} from "@angular/fire/compat/storage";
 export class NewfeedComponent implements OnInit {
   userLogin: any;
   loading: any;
-  posts: any
+  posts: any;
   createForm: FormGroup | any
   statuses: any
+  comments: any
+  commentForm: FormGroup | any
   downloadURL: Observable<string> | undefined;
   constructor(private authService: AuthService,
               private router: Router,
               private postServive: PostService,
               private fb: FormBuilder,
               private statusService: StatusService,
-              private storage: AngularFireStorage) { }
+              private storage: AngularFireStorage,
+              private commentService: CommentService,
+              ) { }
 
   ngOnInit(): void {
     this.userLogin = JSON.parse(<string>localStorage.getItem('user'));
@@ -36,6 +41,12 @@ export class NewfeedComponent implements OnInit {
       status_id: [""],
       user_id: [this.userLogin.id],
     })
+
+    this.commentForm = this.fb.group({
+      content: [""],
+      user_id: [""],
+      post_id: [""]
+    })
   }
 
   logout(){
@@ -44,11 +55,14 @@ export class NewfeedComponent implements OnInit {
         this.router.navigate([""])
     })
   }
+
   getPosts() {
     this.postServive.getAll().subscribe(res => {
       this.posts = res
     })
   }
+
+
   create(){
     let data = this.createForm?.value
     this.postServive.create(data).subscribe(res => {
